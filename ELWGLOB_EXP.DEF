@@ -1,0 +1,6 @@
+; Filename: ELWGLOB_EXP.DEF
+LIBRARY ELWGLOB.DLL
+; *** Visual Studio 2022 EXPORT ALIASES ONLY ***
+; Globals - Copyright (c) 2024 Elwynor Technologies
+EXPORTS
+	_init__elwglob=init__elwglob	@1

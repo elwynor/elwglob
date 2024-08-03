@@ -1,0 +1,4407 @@
+
+LEVEL3 {Elwynor Technologies: Globals}
+
+ This defines the key users are required to have to be
+ able to use the help global command.
+
+HLPKEY {DEMO} S 15 Key required for global help
+
+ This defines the key users are required to have to be
+ able to use the instant log-off global command.
+
+OFFKEY {NORMAL} S 15 Key required for instant log-off
+
+ This defines the key users are required to have to be
+ able to use the page console global command.
+
+PGKEY {DEMO} S 15 Key required for page console
+
+ This defines the key users are required to have to be
+ notified that someone is paging the console. (You must
+ answer YES to option PGALL to have these users notified).
+
+CPGKEY {SUPER} S 15 Key required for notification of console page
+
+ This defines the key users are required to have to be
+ able to stop a console page in progress.
+
+BPSTPKEY {SUPER} S 15 Key required for halting those beeps
+
+ This defines the key users are required to have to be
+ able to look up another user's credit and class
+ information.
+
+CLOKKEY {SUPER} S 15 Key required to look up another user's info
+
+ This defines the key users are required to have to see
+ another user's credits using the display class and credit
+ information command.
+
+SEECKEY {SYSOP} S 15 Key required to see another user's credits
+
+ This defines the key users are required to have to be
+ able to use the ANSI toggle global command.
+
+ANSTKEY {NORMAL} S 15 Key required for ANSI toggle
+
+ This defines the key users are required to have to be
+ able to use the "busy" flag toggle global command.
+
+BSYKEY {NORMAL} S 15 Key required for busy flag toggle
+
+ This defines the key users are required to have to be
+ able to toggle another user's "Busy" flag OFF.
+
+BSYOKEY {SUPER} S 15 Key required to toggle a user "unbusy"
+
+ This defines the key users are required to have to be
+ notified when a user is no longer busy.
+
+BSNKEY {NORMAL} S 15 Key required for busy notify
+
+ This defines the key users are required to have to be
+ able to toggle their duplex (echo) mode.
+
+DUPKEY {NORMAL} S 15 Key required for duplex toggle
+
+ This defines the key users are required to have to be
+ able to use the editor toggle global command.
+
+EDTKEY {NORMAL} S 15 Key required for editor toggle
+
+ This defines the key users are required to have to be
+ able to use the re-log global command.
+
+RLGKEY {NORMAL} S 15 Key required for re-log
+
+ This defines the key users are required to have to be
+ able to force other users to re-log.
+
+URLGKEY {SUPER} S 15 Key required to force another user to re-log
+
+ This defines the key users are required to have to be
+ able to use the membership information global command.
+
+MBRKEY {DEMO} S 15 Key required for membership information
+
+ This defines the key users are required to have to be
+ able to use the IBM mode toggle global command.
+
+IBMKEY {NORMAL} S 15 Key required for IBM mode toggle
+
+ This defines the key users are required to have to be
+ able to use the set screen width global command.
+
+SCWKEY {NORMAL} S 15 Key required for set screen width
+
+ This defines the key users are required to have to be
+ able to use the set screen length global command.
+
+SCLKEY {NORMAL} S 15 Key required for set screen length
+
+ This defines the key users are required to have to be
+ able to use the continuous output toggle global command.
+
+CTOKEY {NORMAL} S 15 Key required for continuous output toggle
+
+ This defines the key users are required to have to be
+ able to use the user credit information global command.
+
+UCIKEY {DEMO} S 15 Key required for user credit information
+
+ This defines the key users are required to have to be
+ able to use the who's online global command.
+
+WHOKEY {DEMO} S 15 Key required for who's online
+
+ This defines the key users are required to have to be
+ able to use the Editor pester toggle global command.
+
+EPSTKEY {NORMAL} S 15 Key required for Editor pester toggle
+
+ This defines the key users are required to have to be
+ able to use the display date and time global command.
+
+DNTKEY {DEMO} S 15 Key required for display date and time
+
+ This defines the key users are required to have to be
+ able to use the repeat previous command global command.
+
+RPTKEY {NORMAL} S 15 Key required for repeat previous command
+
+ This defines the key users are required to have to be
+ able to use the global chat channels global commands.
+
+GLBKEY {NORMAL} S 15 Key required for global chat channels
+
+ This defines the key users are required to have to be
+ able to use the telegrams global commands.
+
+TGMKEY {NORMAL} S 15 Key required for telegrams
+
+ This defines the key users are required to have to be
+ able to use the macros global commands.
+
+MACKEY {NORMAL} S 15 Key required for macros
+
+ This defines the key users are required to have to be
+ able to use the transfer credits global command.
+
+TRCKEY {NORMAL} S 15 Key required for transfer credits
+
+ This defines the key users are required to have to be
+ able to receive transferred credits; in other words,
+ users who DON'T have this key cannot have credits
+ transferred to them using the transfer credits command.
+ Note: Users who can transfer any amount without
+ restriction (users with the UNLTRKEY key) can transfer
+ credits to users who don't have this key.
+
+TRCRKEY {NORMAL} S 15 Key required to receive credit transfer
+
+ This defines the key users are required to have to be
+ able to use the transfer days in class global command.
+
+TRDKEY {NORMAL} S 15 Key required for transfer days
+
+ This defines the key users are required to have to avoid
+ having the transfer any minimum number of days in class
+ you specify in option MNTRD.
+
+NMTDKEY {SUPER} S 15 Key to avoid minimum days transfer
+
+ This defines the key users are required to have to be
+ able to extend the online time of a user.
+
+TEXTKEY {SUPER} S 15 Key required for extending time
+
+ This defines the key users are required to have to be
+ able to look up another user's credit and class account
+ information.
+
+OTHKEY {NORMAL} S 15 Key required for other user account information
+
+ This defines the key users are required to have to be
+ able to use the account settings global command.
+
+ACSTKEY {DEMO} S 15 Key required for account settings
+
+ This defines the key users are required to have to be
+ able to use the post credits global command.
+
+PSTCKEY {SUPER} S 15 Key required for post credits
+
+ This defines the key users are required to have to be
+ able to use the boot user off line global command.
+
+BTUKEY {SUPER} S 15 Key required for boot user off line
+
+ This defines the key users are required to have to be
+ able to use the log-on notifier global command.
+
+LOGKEY {NORMAL} S 15 Key required for log-on notices
+
+ This defines the key users are required to have to be
+ able to view and clear another user's log-on and log-off
+ messages to others.
+
+LCLRKEY {SUPER} S 15 Key required to view and clear other user's messages
+
+ This defines the key users are required to have to be
+ able to use the list new sign-ups global command.
+
+SGNKEY {SUPER} S 15 Key required for list new sign-ups
+
+ This defines the key users are required to have to be
+ able to use the system-wide broadcast global command.
+
+SYSBKEY {SUPER} S 15 Key required for system-wide broadcast
+
+ This defines the key users are required to have to be
+ able to use the post days in class global command.
+
+PDYKEY {SUPER} S 15 Key required for post days in class
+
+ This defines the key users are required to have to be
+ able to use the switch user class global command.
+
+SWCKEY {SYSOP} S 15 Key required for switch user class
+
+ This defines the key users are required to have to be
+ able to use the give or take user key global command.
+
+GTUKEY {SUPER} S 15 Key required for give or take user key
+
+ This defines the key users are required to have to be
+ able to use the invisibility toggle global command.
+
+INVKEY {SUPER} S 15 Key required for invisibility toggle
+
+ This defines the key users are required to have to be
+ able to use the suspend/unsuspend user global command.
+
+SUSKEY {SUPER} S 15 Key required to suspend/unsuspend a user
+
+ This defines the key users are required to have to be
+ able to use the delete/undelete user global command.
+
+DLUKEY {SYSOP} S 15 Key required for delete/undelete a user
+
+ This defines the key users are required to have to be
+ able to get the current settings of another user.
+
+OUSKEY {SUPER} S 15 Key required to get another user's settings
+
+ This defines the key users are required to have to be
+ able to use the page commands.
+
+PAGKEY {NORMAL} S 15 Key required to use page commands.
+
+ This defines the key users are required to have to be
+ able to use the alarm global command.
+
+ALRMKEY {NORMAL} S 15 Key required to use alarm command
+
+ This defines the key users are required to have to be
+ able to display all user's chat channels and topics.
+
+DISKEY {SYSOP} S 15 Key required to display chat channels
+
+ This defines the key users are required to have to be
+ able to use the global chat channel reserved for Sysops
+ (the highest available global chat channel).
+
+SYSCKEY {SYSOP} S 15 Key required to use Sysop global chat channel
+
+ This defines the key users are required to have to be
+ able to use the clear global chat channel topic global
+ command.
+
+CLRKEY {SUPER} S 15 Key required to use clear global chat channel command
+
+ This defines the key users are required to have to be
+ able to remove all telegrams from a specified user from
+ the telegram database.
+
+TDAKEY {SYSOP} S 15 Key required to remove all telegrams by a user
+
+ This defines the key users are required to have to be
+ able to colorize their input.
+
+COLKEY {NORMAL} S 15 Key required to colorize input
+
+ This defines the key users are required to have to be
+ able to chat in global chat channels while invisible.
+
+GCIKEY {SUPER} S 15 Key required to global chat while invisible
+
+ This defines the key users are required to have to be
+ able to send pages while invisible.
+
+PGIKEY {SUPER} S 15 Key required to send pages while invisible
+
+ This defines the key users are required to have to be
+ able to send telegrams while invisible.
+
+TMIKEY {SUPER} S 15 Key required to send telegrams while invisible
+
+ This defines the key users are required to have to be
+ notified when invisible users log-on or log-off and see
+ a lines in use count which includes invisible users.
+
+SYSLKEY {SUPER} S 15 Key to be notified of invisible log-ons and log-offs
+
+ This defines the key users are required to have to be
+ able to page another user even if his page setting is
+ turned OFF or to page another user any time no matter
+ despite a page setting of OK. Users with this key also
+ cannot have their pages blocked.
+
+PTUKEY {SUPER} S 15 Key to page thru a page setting of OFF or OK
+
+ This defines the key users are required to have to be
+ able to send a telegram to a user whose telegram
+ notification setting is OFF and have the user notified;
+ and also whose telegrams cannot be blocked or cleared.
+
+TNKKEY {SUPER} S 15 Key for telegrams to not be blocked/cleared
+
+ Users who have this key cannot be suspended using the
+ commands in Globals.
+
+NSUSKEY {MASTER} S 15 Key to not be suspended
+
+ Users who have this key cannot be deleted using the
+ commands in Globals.
+
+NDELKEY {MASTER} S 15 Key to not be deleted
+
+ This defines the key users are required to have to be
+ able to transfer credits without restriction per global
+ command.
+
+UNLTRKEY {SUPER} S 15 Key to transfer credits without restriction
+
+ This defines the key users are required to have to be
+ able to post credits without restriction per global
+ command.
+
+UNLPTKEY {SYSOP} S 15 Key to post credits without restriction
+
+ This defines the key users are required to have to be
+ able to use the Friends Notice global command.
+
+FRNDKEY {NORMAL} S 15 Key to use Friends Notice global command
+
+ This defines the key users are required to have to be
+ able to send a page to another user who is "Busy", or
+ in The Editor with his Pester setting turned OFF.
+
+PGBSYKEY {SYSOP} S 15 Key to page thru "Busy" and Editor Pester
+
+LEVEL4 {Elwynor Technologies: Globals}
+
+ This string is what the user must enter to get help and
+ information about the global commands.
+
+HLPSTG {=?} S 10 Help on globals global command string
+
+ This string is what the user must enter to access the
+ Instant Log-off global command.
+
+OFFSTG {=x} S 10 Instant log-off global command string
+
+ This string is what the user must enter to access the
+ Continuous Output global command.
+
+CNTSTG {=ct} S 10 Continuous output global command string
+
+ This string is what the user must enter to access the
+ Page Console global command.
+
+BPSTG {=e} S 10 Page console global command string
+
+ This string is what the user must enter to stop a console
+ page in progress.
+
+BPSTPSTG {=q} S 10 End console page global command string
+
+ This string is what the user must enter to access the
+ ANSI Toggle global command.
+
+ANSSTG {=a} S 10 ANSI toggle global command string
+
+ This string is what the user must enter to access the
+ Busy Flag Toggle global command.
+
+BSYSTG {=b} S 10 Busy flag toggle global command string
+
+ This string is what the user must enter to access the
+ Busy Notifier global command.
+
+BNTSTG {=bn} S 10 Busy notifier global command string
+
+ This string is what the user must enter to access the
+ Duplex Toggle Mode global command.
+
+DUPSTG {=du} S 10 Duplex mode toggle global command string
+
+ This string is what the user must enter to access the
+ Default Editor Type global command.
+
+EDTSTG {=ed} S 10 Editor type global command string
+
+ This string is what the user must enter to access the
+ Re-log onto System global command.
+
+RLGSTG {=re} S 10 Re-log onto system global command string
+
+ This string is what the user must enter to access the
+ Membership Information global command.
+
+MBRSTG {=$} S 10 Membership info global command string
+
+ This string is what the user must enter to access the
+ IBM System Type global command.
+
+IBMSTG {=g} S 10 IBM system type global command string
+
+ This string is what the user must enter to access the
+ Screen Width Setting global command.
+
+SWSTG {=sw} S 10 Screen width setting global command string
+
+ This string is what the user must enter to access the
+ Screen Length Setting global command.
+
+SLSTG {=s} S 10 Screen length setting global command string
+
+ This string is what the user must enter to access the
+ Credit Information global command.
+
+CRDSTG {=c} S 10 Credit information global command string
+
+ This string is what the user must enter to access the
+ Who's Online global command.
+
+WHOSTG {#} S 10 Who's online global command string
+
+ This string is what the user must enter to access the
+ Editor pester global command.
+
+EPSTSTG {=pest} S 10 Editor pester global command string
+
+ This string is what the user must enter to access the
+ Date and Time global command.
+
+DNTSTG {=dt} S 10 Date and time global command string
+
+ This string is what the Sysop must enter to access the
+ Post Credits global command.
+
+PSTSTG {=pc} S 10 Post credits global command string
+
+ This string is what the Sysop must enter to access the
+ Eject User global command.
+
+ZAPSTG {=zap} S 10 Eject user global command string
+
+ This string is what the user must enter to access the
+ repeat previous command global command.
+
+RPTSTG {=r} S 10 Repeat command global command string
+
+ This string is what the user must enter to access the
+ list new sign-ups global command.
+
+NEWSTG {=ln} S 10 List new sign-ups global command string
+
+ This string is what the user must enter to access the
+ log-on notices global command.
+
+LOGSTG {=log} S 10 Log-on notices global command string
+
+ This is the string to type to set or clear your message
+ to other users when you are logging on.
+
+LONSTR {=lon} S 15 Edit log-on message string
+
+ This is the string to type to set or clear your message
+ to other users when you are logging off.
+
+LOFFSTR {=loff} S 15 Edit log-off message string
+
+ This is the string to type to clear another user's log-on
+ and log-off messages.
+
+LCLRSTR {=lclear} S 15 Clear another user's messages string
+
+ This is the string to type to show a user's log-on and
+ log-off messages.
+
+SHOWSTR {=lshow} S 15 Show a user's log-on and log-off messages
+
+ This string is what the user must enter to access the
+ various chat channels commands.
+
+CHATSTG {=cc} S 10 Chat channels global command string
+
+ This string is what the user must add to CHATSTG to
+ toggle his global chat output echo.
+
+ECHSTG {echo} S 10 Chat channels echo output toggle string
+
+ This string is what the user must add to CHATSTG to
+ set his global chat channel.
+
+SETSTG {set} S 10 Set global chat channel command string
+
+ This string is what the user must add to CHATSTG to
+ show the global chat channel topics in use.
+
+SHOWSTG {show} S 10 Show global chat channel topics command string
+
+ This string is what the user must add to CHATSTG to
+ display who is on each global chat channel.
+
+DISSTG {display} S 10 Display who is on channels command string
+
+ This string is what the user must add to CHATSTG to
+ change a global chat channel topic.
+
+TPCSTG {topic} S 10 Change global chat channel topic command string
+
+ This string is what the user must add to CHATSTG to
+ toggle his notices when users join or leave his global
+ chat channel on or off.
+
+NOTSTG {notice} S 10 Toggle notices of joining/leaving chat channel
+
+ This string is what the user must type to read any
+ telegrams he may have.
+
+GTLSTG {==} S 10 Read telegram command string
+
+ This character is what the user must type right before
+ a user-id to send a telegram to the desired user-id.
+
+TLCCHR { =} C
+
+ This string is what the user must type to toggle his
+ telegram notification setting.
+
+TALTSTG {=ta} S 10 Telegram notification toggle string
+
+ This character is what the user must type to start a
+ colorize input command.
+
+ANSCHR { \} C
+
+ This character is what the user must type to color the
+ background of his input.
+
+BCKCHR { b} C
+
+ This character is what the user must type to color the
+ foreground of his input.
+
+FRECHR { f} C
+
+ This character is what the user must type to create
+ special colorize input effects.
+
+SPCCHR { s} C
+
+ This string is what the user must type after the help
+ string to get help on macros.
+
+MACSTG {=m} S 10 Macro help string
+
+ This string is what the user must type to set a macro
+ command string.
+
+MCSET {=mc} S 10 Set a macro command string
+
+ This string is what the user must type to set a macro.
+
+MMSET {=mm} S 10 Set a macro string
+
+ This string is what the user must type to list his macro
+ command strings.
+
+MCLIST {=mcl} S 10 List macro commands string
+
+ This string is what the user must type to list his macros.
+
+MMLIST {=mml} S 10 List macros string
+
+ This string is what the user must type to send a
+ system-wide broadcast.
+
+GLBSTG {=!} S 10 System-wide broadcast string
+
+ This string is what the user must type to transfer
+ credits to another user.
+
+TRNSTG {=trc} S 10 Transfer credits string
+
+ This string is what the user must type to transfer days
+ in class to another user.
+
+TRDSTG {=trd} S 10 Transfer days string
+
+ This string is what the user must type to extend the
+ time online of a user.
+
+TEXTSTG {=te} S 10 Extend online time string
+
+ This string is what the user must type to post days in
+ class to a user.
+
+PDYSTG {=pd} S 10 Post days in class string
+
+ This string is what the user must type to get account
+ information on another user.
+
+UISTG {=ui} S 10 Get other user information string
+
+ This string is what the user must type to get his current
+ account settings.
+
+CSTSTG {=cs} S 10 Get current account settings string
+
+ This string is what the user must type to switch a user's
+ class.
+
+SWCSTG {=sc} S 10 Switch user class string
+
+ This string is what the user must type to give or take a
+ key.
+
+UKSTG {=uk} S 10 Give or take user key string
+
+ This string is what the user must type to toggle
+ invisibility.
+
+INVSTG {=in} S 10 Invisibility toggle string
+
+ This string is what the user must to type suspend a user
+ with automatic unsuspension.
+
+ASUSSTG {=sa} S 10 Suspend with automatic unsuspend command string
+
+ This string is what the user must type to toggle the
+ suspend/unsuspend a user global command.
+
+SUSSTG {=su} S 10 Suspend/unsuspend user toggle string
+
+ This string is what the user must type to toggle the
+ delete/undelete a user global command.
+
+DLUSTG {=ku} S 10 Delete/undelete user toggle string
+
+ This string is what the user must type to page another
+ user.
+
+PGUSTG {=p} S 10 Page another user string
+
+ This string is what the user must type to block another
+ user's pages.
+
+FPUSTG {=pf} S 10 Block another user's pages string
+
+ This string is what the user must type to re-page with the
+ last page sent.
+
+RPGSTG {=pr} S 10 Re-page with last page string
+
+ This string is what the user must type to use the clear
+ global chat channel topic command.
+
+CLRSTG {clear} S 10 Clear global chat channel topic string
+
+ This string is what the user must type to delete all
+ telegrams to himself from a certain person.
+
+TCLRSTG {=td} S 10 Delete all telegrams from a certain person
+
+ This string is what the user must type to remove all
+ telegrams from a certain person from the telegram
+ database.
+
+TDASTG {=tx} S 10 Remove all telegrams by a person from database
+
+ This string is what the user must type to block/unblock
+ another user from sending him telegrams.
+
+TBKSTG {=tb} S 10 Block/unblock another user's telegrams
+
+ This string is what the user must type to use the alarm
+ global command to be alerted at a desired time.
+
+ALRMSTG {=*} S 10 Be alerted at a certain time string
+
+ This string is what the user must type to use the Friends
+ Notice global command to be alerted of the log on or off
+ of certain people.
+
+FRNDSTG {=+} S 10 Friends Notice Global command string
+
+ This is the default global chat channel you want new users
+ to have. (Note a setting of 0 is OFF).
+
+DEFCC {Default chat channel for new users? 0} N 0 100
+
+ This is the default setting for the user's global chat
+ channel echo toggle. 0 is OFF and 1 is ON.
+
+DEFECH {Default chat echo setting for new users? 1} N 0 1
+
+ This is the default setting for the user's duplex (echo)
+ toggle setting. 0 is OFF and 1 is ON.
+
+DEFDUP {Default duplex toggle setting for new users? 1} N 0 1
+
+ This is the default page setting for new users. 0 is OFF,
+ 1 is allow to be paged every 2 minutes, and 2 is allow
+ the user to be blasted with pages.
+
+DEFPAG {Default page setting for new users? 2} N 0 2
+
+ This is the default setting for notifying the user that
+ he has received a telegram. 0 is OFF and 1 is ON.
+
+DEFTEL {Default telegram notify for new users? 1} N 0 1
+
+ This is the default setting for showing a user's age in
+ the Who's Online display. 1 will show the age, while 0
+ will not.
+
+DEFAGE {Default show ages in Who's Online? YES} B
+
+ This is the default setting for a user's choice of which
+ Who's Online display to show.
+
+DEFWHO {Default Who's Online display? 1} N 1 5
+
+ This is the default setting for pester the user with
+ messages while in The Editor. 0 is OFF and 1 is ON.
+
+DEFPST {Default pester user in Editor setting for new users? 0} N 0 1
+
+ This is the default setting for giving log-on and log-off
+ notices to the user. 0 is OFF and 1 is ON.
+
+DEFLOG {Default log-on notices setting for new users? 1} N 0 1
+
+ This is the default setting for giving the user notice of
+ others joining or leaving his global chat channel. 0 is
+ OFF and 1 is ON.
+
+DEFCHN {Default join/leave global chat setting for new users? 1} N 0 1
+
+ This is the default log-on message for new users.
+
+DEFLON {} S 39 Default log-on message for new users
+
+ This is the default log-off message for new users.
+
+DEFLOF {} S 39 Default log-off message for new users.
+
+ This is macro command string number 1 by default for new
+ users (1 of 10).
+
+MACCM0 {=m0} S 4 Macro command string (1 of 10)
+
+ This is macro command string number 2 by default for new
+ users (2 of 10).
+
+MACCM1 {=m1} S 4 Macro command string (2 of 10)
+
+ This is macro command string number 3 by default for new
+ users (3 of 10).
+
+MACCM2 {=m2} S 4 Macro command string (3 of 10)
+
+ This is macro command string number 4 by default for new
+ users (4 of 10).
+
+MACCM3 {=m3} S 4 Macro command string (4 of 10)
+
+ This is macro command string number 5 by default for new
+ users (5 of 10).
+
+MACCM4 {=m4} S 4 Macro command string (5 of 10)
+
+ This is macro command string number 6 by default for new
+ users (6 of 10).
+
+MACCM5 {=m5} S 4 Macro command string (6 of 10)
+
+ This is macro command string number 7 by default for new
+ users (7 of 10).
+
+MACCM6 {=m6} S 4 Macro command string (7 of 10)
+
+ This is macro command string number 8 by default for new
+ users (8 of 10).
+
+MACCM7 {=m7} S 4 Macro command string (8 of 10)
+
+ This is macro command string number 9 by default for new
+ users (9 of 10).
+
+MACCM8 {=m8} S 4 Macro command string (9 of 10)
+
+ This is macro command string number 10 by default for new
+ users (10 of 10).
+
+MACCM9 {=m9} S 4 Macro command string (10 of 10)
+
+ This is macro number 1 by default for new users (1 of 10).
+
+MACMC0 {} S 39 Macro (1 of 10)
+
+ This is macro number 2 by default for new users (2 of 10).
+
+MACMC1 {} S 39 Macro (2 of 10)
+
+ This is macro number 3 by default for new users (3 of 10).
+
+MACMC2 {} S 39 Macro (3 of 10)
+
+ This is macro number 4 by default for new users (4 of 10).
+
+MACMC3 {} S 39 Macro (4 of 10)
+
+ This is macro number 5 by default for new users (5 of 10).
+
+MACMC4 {} S 39 Macro (5 of 10)
+
+ This is macro number 6 by default for new users (6 of 10).
+
+MACMC5 {} S 39 Macro (6 of 10)
+
+ This is macro number 7 by default for new users (7 of 10).
+
+MACMC6 {} S 39 Macro (7 of 10)
+
+ This is macro number 8 by default for new users (8 of 10).
+
+MACMC7 {} S 39 Macro (8 of 10)
+
+ This is macro number 9 by default for new users (9 of 10).
+
+MACMC8 {} S 39 Macro (9 of 10)
+
+ This is macro number 10 by default for new users (10 of 10).
+
+MACMC9 {} S 39 Macro (10 of 10)
+
+ This is the topic of the highest available Chat Channel,
+ which only keyed users have access to.
+
+SYSTOPIC {Sysop Chat Channel} S 29 Sysop Chat Channel Topic
+
+ This option allows you to control the number of beeps
+ for a console page ( the =e global ). You can vary the
+ number as desired. Choosing 0 turns console page off,
+ while increasing this number makes more beeps. Please
+ keep in mind that there is no way to turn beeps off once
+ the console has been paged, and that using more beeps
+ increases system loading.
+
+BPDUR {Number of beeps for console page? 60} N 0 120
+
+ This option allows you to set the tone of the beep you get
+ for a console page. For example, 0 is a silent page, while
+ 200 is high-pitched, and 1000 is low-pitched.
+
+BPPIT {What pitch should the console page be? 1000} N 0 2000
+
+ This option specifies how long in seconds users must wait
+ between console pages.
+
+PGDLY {How long must users wait between console pages? 120} N 0 300
+
+ Answer YES to this question if you want every user with
+ the CPGKEY on-line to be paged with a console page. Answer
+ NO if you want only the console to be paged.
+
+PGALL {Page every Sysop on line with console page? YES} B
+
+ Answer YES to this question if you want users to see the
+ Who's Online listing of users on-line automatically when
+ they log on; otherwise answer NO.
+
+LOGLIST {Automatically display Who's Online at Log on? YES} B
+
+ Answer YES to this question if you want users to get a
+ notice of other people joining/leaving their chat channel
+ during log-on/log-off; otherwise answer NO.
+
+LOGCHNOT {Notify of chat channel activity at log-on? YES} B
+
+ This number determines how many chat channels your BBS is
+ using; the more channels you use, the greater system
+ performance you need. Memory usage is NOT affected by
+ changing this number.
+
+NUMCHAT {How many chat channels in use? 10000} N 1000 10000
+
+ This character must be a digit in the range of 0 to 7,
+ and defines the background color that you want set after
+ the user colorizes his input. This is to keep other users
+ from causing all input in the teleconference to be set to
+ an undesired color, for example. To see what colors the
+ digits stand for, see the Colorize Input help in
+ EZEGLOBS.DOC, or get help on the command online.
+
+ENBNUM {Background color to set after colorizing input? 0} N 0 7
+
+ Answer YES if you want users to hear "beeps" from various
+ prompts in this module; otherwise, answer NO.
+
+DOBEEPS {"Beep" users at certain prompts? YES} B
+
+ Answer YES if you want log-on and log-off notices to be
+ displayed to all users when someone is forced invisible
+ by a Sysop; otherwise, answer NO. Note: This will also
+ re-set the forced user's time on-line to 0.
+
+SNKUSER {Display log-on notices for forced invisibility? YES} B
+
+ Answer YES if you want log-on and log-off notices to be
+ displayed to all users when someone toggles invisibility;
+ otherwise, answer NO. Note: This will also re-set the
+ invisible user's time on-online to 0.
+
+SNEAK {Display log-on notices for invisibility toggle? YES} B
+
+ Answer YES if you want the user's current page title to be
+ displayed instead of "Menuing System" in the Who's Online
+ output; otherwise, answer NO if you want "Menuing System"
+ to be displayed.
+
+SHOWPG {Display page title instead of "Menuing System"? YES} B
+
+ Answer YES if you want messages sent to all users on-line
+ using the send global message command (=! default) to
+ be sent to users whose "Busy" flag is set and who are not
+ transferring a file or in "Opchat". Otherwise, answer NO
+ if you don't want users who are "Busy" to receive global
+ messages send with this command.
+ NOTE: This setting also controls whether users with the
+ key to page thru a "Busy" flag, option PGBSYKEY, can page
+ thru "Busy".
+
+SNDTHRU {Send global messages to "Busy" users? YES} B
+
+ This is the name of the Menuing System on your module.
+ It is used to determine what to display for the "Module"
+ output in Who's Online if you chose to display current
+ page title instead of "Menuing System" in option SHOWPG.
+ Normally you should NOT change this unless for some
+ reason your BBS has been customized and you have changed
+ the this name.
+ Do NOT color this!!!
+
+MNUNAM {Menuing System} S 24 Name of Menuing System
+
+ This is the name of the Editor module on your system. It
+ is used to determine when a user is in the Editor so we
+ can prevent that user from being bothered then.
+ Normally you should NOT change this unless you are running
+ an editor module with a different name from the default.
+ Do NOT color this!!!
+
+EDTNAM {Editor} S 24 Name of Editor module
+
+ This is the name of the File Transfer Service module on
+ your system. It is used to determine when a user is
+ transferring files so that his "busy" flag can't be
+ toggled OFF during the transfer.
+ Normally you should NOT change this unless you are running
+ a file transfer module with a different name from the
+ default.
+ Do NOT color this!!!
+
+FILNAM {File Transfer Service} S 24 Name of File Transfer Service module
+
+ This is the number of seconds between checks to see if
+ users are no longer busy; setting it to a low number will
+ improve the responsiveness of the module, while setting it
+ to a high number increases over-all system performance.
+
+CHKSECS {Seconds between checks for busy users? 1} N 1 10
+
+ This is the minimum number of days in class that users
+ who do not have key NMTRDKEY must transfer when they
+ use the transfer days in class global command.
+
+MINTRD {Minimum number of days to transfer? 7} N 1 999
+
+ Answer YES if you want global chat channel topic changes
+ and clearings to be recorded in the Audit Trail; otherwise
+ answer NO.
+
+STPCHG {List topic changes/clearings in Audit Trail? YES} B
+
+ This is the minimum number of credits that the user must
+ transfer to be allowed to transfer credits. This limit
+ does not apply to users with the UNLTRKEY key.
+
+MNTRFR {Minimum credits in transfer: 3600} L 1 999999
+
+ This is the maximum number of credits that a user who does
+ not have the UNLTRKEY key may post in one usage of the
+ post credits global command (either positive or negative).
+ Users with the UNLTRKEY key have no limit other than what
+ can numerically be posted.
+
+MXPST {Maximum credit post amount per usage: 3600} L 1 9999999
+
+ Answer YES to this option if you want users who have the
+ key to toggle invisibility (INVKEY) to be able to see
+ invisible users who have the MASTER key with the Who's
+ Online global, page invisible MASTER key holders, etc.;
+ otherwise, answer NO.
+
+SHWMINV {Allow your staff to see invisible Sysops? YES} B
+
+ This number controls how often the BBS checks the file of
+ suspended users to automatically unsuspend. If you use a
+ midnight cleanup routine, you do not need to do this and
+ should set this to 0. If you do not run a midnight
+ cleanup routine, you will need to set this > 0 if you want
+ automatic unsuspensions. The lower you set this (other
+ than 0), the higher the drag on system performance. If not
+ 0 this is the number of seconds between checks, i.e. every
+ 3600 seconds, or 1 hour for example. Once an hour is more
+ than sufficient!
+
+CHKUNS {Seconds between unsuspend checks? 60} N 0 28800
+
+ This is the number of seconds between checks for users who
+ have been sent telegrams while "Busy", to see if they are
+ still "Busy". If they are not "Busy", they will receive a
+ notice that they have a telegram. Setting this option to
+ 0 turns it OFF. The lower you set this (other than 0), the
+ higher the drag on system performance.
+
+CHKTELS {Seconds between checks for telegrams for "Busy" users? 2} N 0 5
+
+ This is the number of seconds between checks for user's
+ alarm notifications. The lower you set this option, the
+ closer the alarms will be to the desired time, but also
+ the more drag on system performance.
+
+CHKALRM {Seconds between alarm notification checks? 2} N 1 5
+
+ This is the length of the "beep" users receive with their
+ alarm notifications. A smaller number gives a shorter
+ "beep", and a larger number gives a longer "beep".
+ Setting it to 0 turns off the "beep".
+
+ALRMBPS {Length of alarm notification "beep"? 5} N 0 10
+
+ This is the number of seconds between checks for Friends
+ Notice notifications to users who were "Busy" when the
+ desired person logged on or off the BBS. The lower you set
+ this option, the sooner users will receive their
+ notifications, but also the more drag on system
+ performance.
+
+CHKFRND {Seconds between Friends Notice checks? 2} N 1 5
+
+ This is the number of seconds users must wait between
+ changing Chat Channels. You can choose to limit how often
+ users can change to prevent them from annoying others by
+ jumping channels constantly, causing the change notice
+ messages to be displayed. Setting it to 0 means there is
+ no delay and users can change topics as often as they
+ wish.
+
+CHKCHG {Seconds between Chat Channel topic changes? 3} N 0 10
+
+ This is the first of up to five modules that you can block
+ users from using the global commands in this module in.
+ If you don't wish to block users from using the module's
+ global commands inside of any other module, simply leave
+ this option blank.
+
+BLOCK1 {} S 24 Module name 1 to block globals in
+
+ This is the second of up to five modules that you can block
+ users from using the global commands in this module in.
+ If you don't wish to block users from using the module's
+ global commands inside of any other module, simply leave
+ this option blank.
+
+BLOCK2 {} S 24 Module name 2 to block globals in
+
+ This is the third of up to five modules that you can block
+ users from using the global commands in this module in.
+ If you don't wish to block users from using the module's
+ global commands inside of any other module, simply leave
+ this option blank.
+
+BLOCK3 {} S 24 Module name 3 to block globals in
+
+ This is the fourth of up to five modules that you can block
+ users from using the global commands in this module in.
+ If you don't wish to block users from using the module's
+ global commands inside of any other module, simply leave
+ this option blank.
+
+BLOCK4 {} S 24 Module name 4 to block globals in
+
+ This is the fifth of up to five modules that you can block
+ users from using the global commands in this module in.
+ If you don't wish to block users from using the module's
+ global commands inside of any other module, simply leave
+ this option blank.
+
+BLOCK5 {} S 24 Module name 5 to block globals in
+
+LEVEL6 {Elwynor Technologies: Globals}
+
+ This text is displayed to users who use the globals
+ help command. It displays all the globals available.
+
+GLOBHDR {[0m
+                   [1;34mGlobal Commands
+                   [0m---------------
+} T Header for listing global commands
+
+ This is what is output when each global command that the
+ user has access to is listed.
+
+GLOBHLP {[0;1;36m%-11.10s[33m%-28.25s} T Global command output in help
+
+ This is the information in the help output for the help
+ on all global commands command.
+ Do NOT color this!!!
+
+HELP1 {List all global commands} S 25 Information on global 1
+
+ This is the information in the help output for the
+ help on specific global commands command.
+ Do NOT color this!!!
+
+HELP2 {Help on a global command} S 25 Information on global 2
+
+ This string is added to the end of the help on the get
+ help on specific global commands command string so that
+ it will look like =? global as the default.
+ Do NOT color this!!!
+
+HELCAPP { global} S 8 Append to help on global message
+
+ This is the information in the help output for the ANSI
+ toggle global command.
+ Do NOT color this!!!
+
+HELP3 {ANSI graphics toggle} S 25 Information on global 3
+
+ This is the information in the help output for the busy
+ toggle global command.
+ Do NOT color this!!!
+
+HELP4 {"Busy" flag toggle} S 25 Information on global 4
+
+ This is the information in the help output for the busy
+ notifier global command.
+ Do NOT color this!!!
+
+HELP5 {"Busy" notify} S 25 Information on global 5
+
+ This is the information in the help output for the
+ credit information global command.
+ Do NOT color this!!!
+
+HELP6 {Show class & credit info} S 25 Information on global 6
+
+ This is the information in the help output for the
+ global chat channels global command.
+ Do NOT color this!!!
+
+HELP7 {Global chat channels} S 25 Information on global 7
+
+ This is the information in the help output for the
+ current account settings global command.
+ Do NOT color this!!!
+
+HELP8 {Show current settings} S 25 Information on global 8
+
+ This is the information in the help output for the
+ continuous output toggle global command.
+ Do NOT color this!!!
+
+HELP9 {Continuous output toggle} S 25 Information on global 9
+
+ This is the information in the help output for the
+ date and time display global command.
+ Do NOT color this!!!
+
+HELP10 {The date and time} S 25 Information on global 10
+
+ This is the information in the help output for the
+ duplex toggle global command.
+ Do NOT color this!!!
+
+HELP11 {Duplex (echo) mode toggle} S 25 Information on global 11
+
+ This is the information in the help output for the page
+ console global command.
+ Do NOT color this!!!
+
+HELP12 {Page the console} S 25 Information on global 12
+
+ This is the information in the help output for the
+ editor toggle global command.
+ Do NOT color this!!!
+
+HELP13 {Editor mode toggle} S 25 Information on global 13
+
+ This is the information in the help output for the
+ IBM mode global command.
+ Do NOT color this!!!
+
+HELP14 {IBM mode toggle} S 25 Information on global 14
+
+ This is the information in the help output for the
+ invisible toggle global command.
+ Do NOT color this!!!
+
+HELP15 {Invisibility toggle} S 25 Information on global 15
+
+ This is the information in the help output for the
+ delete/undelete user toggle global command.
+ Do NOT color this!!!
+
+HELP16 {Delete a user toggle} S 25 Information on global 16
+
+ This is the information in the help output for the
+ list new users global command.
+ Do NOT color this!!!
+
+HELP17 {List new users} S 25 Information on global 17
+
+ This is the information in the help output for the
+ log-on notices global command.
+ Do NOT color this!!!
+
+HELP18 {Log-on Notices} S 25 Information on global 18
+
+ This is the information in the help output for the
+ macros global commands.
+ Do NOT color this!!!
+
+HELP19 {Macros} S 25 Information on global 19
+
+ This is the information in the help output for the
+ page user global command.
+ Do NOT color this!!!
+
+HELP20 {Page a user} S 25 Information on global 20
+
+ This is the information in the help output for the
+ Editor pester toggle global command.
+ Do NOT color this!!!
+
+HELP21 {Editor pester toggle} S 25 Information on global 21
+
+ This is the information in the help output for the
+ post credits global command.
+ Do NOT color this!!!
+
+HELP22 {Post credits} S 25 Information on global 22
+
+ This is the information in the help output for the
+ post days in class global command.
+ Do NOT color this!!!
+
+HELP23 {Post days in class} S 25 Information on global 23
+
+ This is the information in the help output for the
+ repeat last command global command.
+ Do NOT color this!!!
+
+HELP24 {Repeat last command} S 25 Information on global 24
+
+ This is the information in the help output for the
+ relog global command.
+ Do NOT color this!!!
+
+HELP25 {Relog onto BBS} S 25 Information on global 25
+
+ This is the information in the help output for the
+ screen length global command.
+ Do NOT color this!!!
+
+HELP26 {Set screen length} S 25 Information on global 26
+
+ This is the information in the help output for the
+ suspend user with automatic unsuspend global command.
+ Do NOT color this!!!
+
+HELP27 {Suspend & auto unsuspend} S 25 Information on global 27
+
+ This is the information in the help output for the
+ switch class command.
+ Do NOT color this!!!
+
+HELP28 {Switch a user's class} S 25 Information on global 28
+
+ This is the information in the help output for the
+ suspend user global command.
+ Do NOT color this!!!
+
+HELP29 {Suspend a user} S 25 Information on global 29
+
+ This is the information in the help output for the
+ screen width global command.
+ Do NOT color this!!!
+
+HELP30 {Set screen width} S 25 Information on global 30
+
+ This is the information in the help output for the
+ transfer credits global command.
+ Do NOT color this!!!
+
+HELP31 {Transfer credits} S 25 Information on global 31
+
+ This is the information in the help output for the
+ transfer days in class global command.
+ Do NOT color this!!!
+
+HELP32 {Transfer days in class} S 25 Information on global 32
+
+ This is the information in the help output for the
+ time online extend global command.
+ Do NOT color this!!!
+
+HELP33 {Time online extend} S 25 Information on global 33
+
+ This is the information in the help output for the
+ give/take user key global command.
+ Do NOT color this!!!
+
+HELP34 {Give/Take user key} S 25 Information on global 34
+
+ This is the information in the help output for the
+ instant log-off global command.
+ Do NOT color this!!!
+
+HELP35 {Instant log-off} S 25 Information on global 35
+
+ This is the information in the help output for the
+ eject user from system global command.
+ Do NOT color this!!!
+
+HELP36 {Eject user from BBS} S 25 Information on global 36
+
+ This is the information in the help output for the
+ membership information global command.
+ Do NOT color this!!!
+
+HELP37 {Membership info} S 25 Information on global 37
+
+ This is the information in the help output for the
+ who's online global command.
+ Do NOT color this!!!
+
+HELP38 {List users on-line} S 25 Information on global 38
+
+ This is the information in the help output for the
+ system-wide broadcast global command.
+ Do NOT color this!!!
+
+HELP39 {Send a message to all} S 25 Information on global 39
+
+ This is the information in the help output for the
+ read telegram global command.
+ Do NOT color this!!!
+
+HELP40 {Read a telegram to you} S 25 Information on global 40
+
+ This is the information in the help output for the
+ send telegram global command.
+ Do NOT color this!!!
+
+HELP41 {Send telegram to a user} S 25 Information on global 41
+
+ This is the information in the help output for the alarm
+ global command.
+ Do NOT color this!!!
+
+HELP42 {Set an "alarm" time} S 25 Information on global 42
+
+ This is the information in the help output for the
+ colorize input global command.
+ Do NOT color this!!!
+
+HELP43 {Colorize your input} S 25 Information on global 43
+
+ This is the information in the help output for the
+ Friends Notice global comamnd.
+ Do NOT color this!!!
+
+HELP44 {Friends Log Notice} S 25 Information on global 44
+
+ This string is added to the end of the help on the send
+ telegram command string so that it will look like
+ =<user-id> as the default.
+ Do NOT color this!!!
+
+TELCAPP {<user-id>} S 9 Append to send telegram message
+
+ This message tells the user that he cannot use the command
+ he is trying or asking for help about.
+
+CNTUSE {[0m
+[1;35mSorry, you don't have access to that command.
+} T Can't use this global message
+
+ This text is displayed to users who use the instant log-off
+ option when they exit your board.
+
+GOODBYE {[0m
+[1;35mThanks for calling [37mN+SYSTEM_NAME[35m, call again soon!
+} T Globals Instant Log off goodbye
+
+ This text contains information on how to join your board,
+ costs of membership, etc., and is displayed to users
+ selecting the membership information global command.
+
+MEMINFO {[0m
+
+        <Place your membership information here>
+
+} T Membership information
+
+ This message is displayed to users who select the display
+ user credit info global command (1 of 4).
+
+CRDMSG1 {[0m
+       [1;36mCredit information for [33m%s
+       [36mYou currently have [37m%s [36mcredits
+
+       Account created on : [37m%s} T Display user credit output message 1
+
+ This message is displayed to users who select the display
+ user credit info global command (2 of 4).
+
+CRDMSG2 {[0m
+       [1;36mLast called system : [37m%s
+       [36mTime of last call  : [37m%s
+
+       [36mCurrent class is   : [37m%s
+       [36mDays left in class : [37m%s
+} T Display user credit output message 2
+
+ This message is displayed to users who select the display
+ user credit info global command (3 of 4).
+
+CRDMSG3 {[0m
+       [1;36mTime online today so far         : [37m%s [36mminutes
+} T Display user credit output message 3
+
+ This message is displayed to users who select the display
+ user credit info global command (4 of 4).
+
+CRDMSG4 {[0;1m       [36mMinutes on-line allowed per call : [37m%s
+       [36mMinutes on-line allowed per day  : [37m%s
+       [36mMinutes on-line for this call    : [37m%d
+       [36mMinutes left for this call       : [37m%s
+       [36mMinutes left for the day         : [37m%s
+} T Display user credit output message 4
+
+ This message is displayed to users who select the display
+ other user credits info global command (1 of 4).
+
+ACTMSG1 {[0m
+
+       [1;35mAccount information for [33m%s
+       [35mCurrently has [33m%s [35mcredits
+
+       Account created on : [33m%s} T Display other user account output message 1
+
+ This message is displayed to users who select the display
+ other user credits info global command (2 of 4).
+
+ACTMSG2 {[0m
+       [1;35mLast called system : [33m%s
+       [35mTime of last call  : [33m%s
+
+       [35mCurrent class is   : [33m%s
+       [35mDays left in class : [33m%s
+} T Display other user account output message 2
+
+ This message is displayed to users who select the display
+ other user credits info global command (3 of 4).
+
+ACTMSG3 {[0m
+       [1;35mCalling from (hometown)          : [33m%s
+       [35mTime online today so far         : [33m%s [35mminutes
+       Minutes on-line allowed per call : [33m%s
+       [35mMinutes on-line allowed per day  : [33m%s
+} T Display other user account output message 3
+
+ This message is displayed to users who select the display
+ other user credits info global command (4 of 4).
+
+ACTMSG4 {[0;1m       [35mMinutes on-line for this call    : [33m%d
+       [35mMinutes left for this call       : [33m%s
+       [35mMinutes left for the day         : [33m%s
+} T Display other user account output message 4
+
+ This message is displayed to a user who toggles their
+ Editor pester setting.
+
+PSTTOG {[0m
+[1;32mOk, your Editor pester setting has been turned [37m%s[32m.
+} T Editor pester toggle message
+
+ This is the help message for the Editor pester toggle
+ global command.
+
+EPSTHLP {[0m
+[1;32mThis toggle allows you to control whether you receive pages, telegram
+notifications, log-on notifications and other messages while you are in
+the [33m%s[32m. Turning this setting [37mON [32mwill allow messages to reach you, while
+turning it [37mOFF [32mwill prevent you from being bothered. You toggle your
+setting as follows:
+[33m%s
+[32mYour current setting is [37m%s
+} T Editor pester command help message
+
+ This message gets printed when the user requests help with
+ the log-on notices commands (1 of 2).
+
+LNTHLP1 {[0m
+[1;32mThe log-on and log-off notice module tells you who is coming and going.
+It has the following global commands:
+[33m%s               Toggles log-on and log-off notices on and off
+[32mYour current toggle setting is [33m%s
+[32mYou can create messages to display to others when you log-on and log-off.
+This is done as follows:
+[33m%s  [message]    Sets your log-on message to [message]
+%s               Clears your log-on message
+%s [message]    Sets your log-off message to [message]
+%s              Clears your log-off message
+[32mThese messages can be up to [33m%d [32mcharacters in length
+You can also view your current log-on and log-off messages. This is done as
+follows:
+[33m%s
+} T Log on notice help (1 of 2)
+
+ This message gets printed when the user requests help with
+ the log-on notices commands (2 of 2).
+
+LNTHLP2 {[0;1;32mYou can view the log-on and log-off messages of others, and delete them if
+desired. This is done as follows:
+[33m%s  <user-id>  Displays the messages for <user-id>
+%s <user-id>  Deletes <user-id>'s messages
+} T Log on notice help (2 of 2)
+
+ This message tells users what their setting is (on means
+ they see log-on and log-off notices, and off means they
+ don't).
+
+NTONOF {[0m
+[1;32mYour log-on and log-off notice setting has been set to [33m%s[32m.
+} T Log-ons turned on or off
+
+ This message confirms to the user that his log-on message
+ has been cleared.
+
+LONCLR {[0m
+[1;32mOk, your log-on message has been cleared.
+} T Log-on message cleared confirmation
+
+ This message informs the user that the log-on or log-off
+ message he entered is too long.
+
+MES2BIG {[0m
+[1;35mThe message you entered is too long. You can use up to [33m%d [35mcharacters in
+each message.
+} T Log-on or log-off message too long message
+
+ This message confirms to the user that his log-on message
+ has been set to what he desires.
+
+LONSET {[0m
+[1;32mOk, your log-on message has been set to [33m%s[32m.
+} T Log-on message set confirmation
+
+ This message confirms to the user that his log-off message
+ has been cleared.
+
+LOFFCLR {[0m
+[1;32mOk, your log-off message has been cleared.
+} T Log-off message cleared confirmation
+
+ This message confirms to the user that his log-off message
+ has been set to what he desires.
+
+LOFFSET {[0m
+[1;32mOk, your log-off message has been set to [33m%s[32m.
+} T Log-off message set confirmation
+
+ This message explains the usage of the clear other user
+ messages command.
+
+CLRUSG {[0m
+[1;32mThis command will clear the log-on and log-off messages created by a user.
+It is used as follows:
+[33m%s <user-id>
+} T Clear user messages usage message
+
+ This message informs the user that the person whose
+ log-on and log-off messages he wanted cleared are
+ already clear.
+
+CLRNOW {[0m
+[1m%s [35mdoes not have a log-on or log-off message.
+} T User does not have any messages message
+
+ This message informs the user that the person whose
+ log-on and log-off messages he wanted cleared have been
+ cleared.
+
+MESCLR {[0m
+[1;32mOk, [37m%s[32m's log-on and log-off messages have been deleted.
+} T Log-on and log-off message clearing confirmation message
+
+ This is the output display showing a user's log-on and
+ log-off messages.
+
+SHOW {[0m
+[1;32mYour current log-on and log-off messages to other users are
+Log-on  : [33m%s
+[32mLog-off : [33m%s
+} T User's current log-on and log-off message display
+
+ This is the output display showing another user's log-on
+ and log-off messages.
+
+USRMSG {[0m
+[1;32mCurrent log-on and log-off messages for [37m%s [32mare
+Log-on  : [33m%s
+[32mLog-off : [33m%s
+} T Other user's current log-on and log-off message display
+
+ This is the message which gets printed when someone logs
+ on.
+
+LONMSG {[0m
+[1;35m>> [37m%s [35mhas just logged on, [33m%d [35m%s on-line.
+} T Log on message
+
+ This is the message that gets printed when someone logs
+ off.
+
+LOFMSG {[0m
+[1;35m>> [37m%s [35mhas just logged off, [33m%d [35m%s on-line.
+} T Log off message
+
+ This is the message which gets printed when someone logs
+ on while invisible.
+
+ILONMSG {[0m
+[1;35m>> [37m%s [35mhas just logged on (invisible), [33m%d [35m%s on-line.
+} T Log on message
+
+ This is the message that gets printed when someone logs
+ off while invisible.
+
+ILOFMSG {[0m
+[1;35m>> [37m%s [35mhas just logged off (invisible), [33m%d [35m%s on-line.
+} T Log off message
+
+ This is the extra message to display to others when the
+ user is logging on.
+
+USRLON {[0;1;32m<[0;32m< [1;36m%s [0;32m>[1m>
+} T User's log-on message to others
+
+ This is the extra message to display to others when the
+ user is logging off.
+
+USRLOFF {[0;1;32m<[0;32m< [1;36m%s [0;32m>[1m>
+} T User's log-off message to others
+
+ This is the help message for the Friends Notice global
+ command.
+
+FRNDHLP {[0m
+[1;32mThis global command allows you to be notified when a certain person logs onto
+or off of the BBS. This allows you to turn off your log notices, and still
+receive notice about a particular person. To set a friend to be notified
+about, you type the following:
+[33m%s ON <User-ID>             Informs you when <User-ID> logs on
+%s OFF <User-ID>            Informs you when <User-ID> logs off
+[32mTo clear a notice for a friend, you type the following:
+[33m%s ON                       Clears your log on friend notice
+%s OFF                      Clears your log off friend notice
+[32mTo view your current notices, you type the following:
+[33m%s ?
+[32mThere are two important things to note about this command. First of all, your
+friends notices are good only for as long as you are on-line; if you leave
+the BBS your friends notices will be cleared. Also, if you are "Busy" when
+a friend logs on or off, you will be notified as soon as you are no longer
+"Busy".
+} T Friends notice global command help
+
+ This message shows the user his current Friends notice
+ settings.
+
+CURFRNDS {[0m
+[1;32mYour current log on Friend Notice is  : [33m%s
+[32mYour current log off Friend Notice is : [33m%s
+} T Friends Notice settings message
+
+ This message informs the user that he has no current
+ Friend Notice to clear.
+
+NOFLOG {[0m
+[1;35mSorry, but you don't currently have a log %s Friend Notice to clear.
+} T No Friend Notice message
+
+ This message informs the user that his Friend Notice has
+ been cleared.
+
+FLOGCLR {[0m
+[1;32mOk, your log %s Friend Notice has been cleared.
+} T Friend Notice cleared message
+
+ This message inform the user that the person who he
+ selected for his Friend Notice is already on or off-line,
+ and doesn't need to be set.
+
+FRNDNSET {[0m
+[1;35mSorry, but [33m%s [35mis already %s-line.
+} T No need for Friend Notice message
+
+ This message informs the user that the desired Friend
+ Notice has been set.
+
+FRNDSET {[0m
+[1;32mOk, you will be notified when [33m%s [32mlogs %s.
+} T Friend Notice set message
+
+ This message informs the user that the desired Friend
+ has logged on or off the BBS.
+
+FRNDNOT {[0m
+[1;5mATTENTION!!! [0;1;33m%s [32mhas just logged %s.
+} T Friend Notice message
+
+ This is what appears in the Flags output of the Who's
+ Online command for a user who is logging off the BBS.
+ Note: Do NOT color this!!!
+
+FLAG1 {Log off} S 7 Flag for Who's Online
+
+ This is what appears in the Flags output of the Who's
+ Online command for a user who is invisible.
+ Note: Do NOT color this!!!
+
+FLAG2 {Invis} S 7 Flag for Who's Online
+
+ This is what appears in the Flags output of the Who's
+ Online command for a user who is in chat with the Sysop.
+ Note: Do NOT color this!!!
+
+FLAG3 {Op Chat} S 7 Flag for Who's Online
+
+ This is what appears in the Flags output of the Who's
+ Online command for a user who has their busy flag set.
+ Note: Do NOT color this!!!
+
+FLAG4 {Busy} S 7 Flag for Who's Online
+
+ This is what appears in the Flags output of the Who's
+ Online command for a user who has the MASTER key for
+ the BBS.
+ Note: Do NOT color this!!!
+
+FLAG5 {Sysop} S 7 Flag for Who's Online
+
+ This is what is displayed in the Who's Online global
+ command for a user in log-on.
+ Note: Do NOT color this!!!
+
+LGNSTG {(Logging on)} T User log-on display in Who's Online
+
+ This is what is displayed in the Who's Online global
+ command for a user in log-off.
+ Note: Do NOT color this!!!
+
+LGFSTG {(Logging off)} T User log-off display in Who's Online
+
+ This is what is displayed in the Who's Online global
+ command for a new user signing up.
+ Note: Do NOT color this!!!
+
+SUPSTG {(New sign-up)} T User signing up display in Who's Online
+
+ This is the output for a user logging on in the Who's
+ Online global, before they've entered their handle and
+ password (displays LGNSTG).
+
+ONLMSG {[0;1m%-5.2x[33m%-16.15s
+} T User logging on output
+
+ This is the output for a new user sign-up in the Who's
+ Online global (displays SUPSTG).
+
+SUPMSG {[0;1m%-5.2x[5;33m%-16.15s
+} T New user sign-up output
+
+ This is the output for a user in a supplemental log-on
+ routine like reading Email in the Who's Online global
+ (displays LGNSTG).
+
+SLONMSG {[0;1m%-5.2x[33m%-16.15s[32m%-14.14s
+} T User in supplemental log-on output
+
+ This is the output for a user in a supplemental log-off
+ routine in the Who's Online global (displays LGFSTG).
+
+SLOFMSG {[0;1m%-5.2x[33m%-16.15s[32m%-14.14s
+} T User in supplemental log-off output
+
+ This is the output for a normal user in the Who's Online
+ global command (1 of 3).
+ Displays:
+ Channel, Handle, Location, Class, Sex, Age, Baud, Time this call, Flags
+
+REGON1 {[0;1m%-5.2x[33m%-16.15s[32m%-17.16s[0;1;34m%-10.9s[36m%-3.1c[35m%-4.3s[0;1;31m%-9.6s[0;33m%-6.1d[36m%s
+} T Normal user output 1
+
+ This is the output for a normal user in the Who's Online
+ global command (2 of 3).
+ Displays:
+ Channel, Handle, Location, Sex, Age, Calling from, Time this call, Flags
+
+REGON2 {[0;1m%-5.2x[33m%-16.15s[32m%-17.16s[36m%-3.1c[35m%-4.3s[31m%-23.19s[0;33m%-4.1d[36m%s
+} T Normal user output 2
+
+ This is the output for a normal user in the Who's Online
+ global command (3 of 3).
+ This option is the same as REGON1, except it displays full
+ information in the fields rather than cutting off some of
+ it. It does this by using two lines per user to display
+ the information.
+ Displays:
+ Channel, Handle, Location, Class,
+    Sex, Age, Baud, Time this call, Flags
+
+REGON3 {[0;1m%-5.2x[33m%-31.30s[32m%-26.25s[0;1;34m%-17.16s
+%s[36m%-3.1c[35m%-4.3s[0;1;31m%-9.6s[0;33m%-6.1d[36m%s
+} T Normal user output 3
+
+ This message is printed to a user who posts credits to
+ someone using the post credits global command.
+
+PSYSMSG {[0m
+[1;36mOk, [37m%s [33m%s [36mcredits have been posted to [37m%s[36m.
+} T Message confirming user of credit posting
+
+ This text is displayed when a Sysop requests a list of
+ new user sign-ups.
+
+NEWHDR {[0m
+[1;32mNew sign-ups for [33m%s
+
+[37mUser-ID                            [33mCalling From
+[0;36m----------------------------------------------------------
+} T New sign-up Header text
+
+ This message lists new sign-ups for the date requested.
+
+NWSMSG {[0;1m%-35.30s[33m%s
+} T New sign-ups list
+
+ This message tells a Sysop that there have been no new
+ sign-ups for the date in question.
+
+SGNMSG {[0;1;32mNo new sign-ups on this date
+} T No new sign-ups message
+
+ This is the help message for the busy notifier.
+
+BSNHLP {[0m
+[1;32mThis command lets you know when users can be paged. It is used as follows:
+[33m%s <user-id>              Tells you when <user-id> can be paged or logs off
+[32mYou may only be notified about one user at a time. If you check for a user
+while you are already checking for someone you will only be notified about
+the last user-id.
+You can see who you will be notified about by typing:
+[33m%s ?                      Displays your current notification if any
+[32mYou can end your current notification at any time if you wish. To turn off
+your current notification, simply type:
+[33m%s                        Turns off your current notification
+[36mCurrent notification......[37m%s
+} T Busy notifier help
+
+ This message informs the user that he does not have any
+ current notification to clear.
+
+NONOT {[0m
+[1;35mYou don't have a busy notification to clear right now.
+} T No notification to clear message
+
+ This message informs the user that he has successfully
+ cleared his current busy notification.
+
+NOTCAN {[0m
+[1;32mOk, you will no longer be notified when [37m%s [32mis free to be paged.
+} T Current notification cancelled message
+
+ This message informs the user of his current "Busy"
+ notification, if any.
+
+CURNOT {[0m
+[1;32mYour current "[33mBusy[32m" notification is [37m%s[32m.
+} T Current busy notification message
+
+ This message tells the user that the person he wished to be
+ notified about when they are no longer busy is not on-line.
+
+GONE {[0m
+[1m%s [35mis not logged on the system.
+} T User is not on-line
+
+ This message tells the user that the user-id he wished to
+ be notified is no longer busy is now free.
+
+NTBSY {[0m
+[1m%s [32mis now free to be paged.
+} T User is free
+
+ This message confirms to the user that he will be notified
+ as soon as the user-id he entered is free to be paged or
+ has logged off the system.
+
+NOTIFY {[0m
+[1;32mOk, you will be notified as soon as [37m%s [32mcan be paged or logs off the system.
+} T Notify confirmation message
+
+ This message informs the user that the person whose "busy"
+ flag he wishes to toggle OFF is not "busy".
+
+NOTBUSY {[0m
+[1;35mSorry, but [37m%s [35misn't "Busy" at the present time.
+} T User to toggle "unbusy" is not "busy" message
+
+ This message informs the user that the person whose "busy"
+ flag he wishes to toggle OFF is transferring a file and
+ his flag cannot be toggled at this time.
+
+INFILE {[0m
+[1;35mSorry, but [37m%s[35m's "Busy" flag cannot be toggled [33mOFF [35mduring a file transfer.
+} T User transferring file so can't toggle "busy" off message
+
+ This message informs the user that someone has just forced
+ his "busy" flag off.
+
+URNTBSY {[0m
+[1m%s [32mhas just turned your "Busy" flag off, so you will now receive pages and
+other interruptions.
+} T User's "busy" flag forced off notice
+
+ This message informs the user that the person he specified
+ has had their "busy" flag turned OFF.
+
+USRNBSY {[0m
+[1;32mOk, [37m%s[32m's "Busy" flag has been turned [33mOFF[32m.
+} T User's "busy" flag turned off message
+
+ This message informs the user that there is more than one
+ possible match for the user-id he entered on-line; he must
+ be more specific for us to be able to notify him when this
+ person is free to be paged.
+
+WHO {[0m
+[1;35mThere is more than one possible matching user-id on-line for the handle you
+gave, [37m%s[35m. You need to be more specific. For example, if both Mickey and
+Minnie are on-line, you could enter "[37m%s [33mmic[35m" to to notified when Mickey is
+free to be paged.
+} T More than one possible handle matches input message
+
+ This message tells the user the the person he wished to be
+ notified about when they are no longer busy has logged off
+ the system.
+
+LEFT {[0m
+[1m%s [32mhas logged off the system.
+} T User has logged off message
+
+ This message is displayed to a user requesting his channel
+ number who has no global chat channel selected.
+
+NOCHMSG {[0m
+[1;36mYou are not using a chat channel right now.
+} T No chat channel in use message
+
+ This message is displayed to a user requesting his channel
+ number who is using a global chat channel.
+
+CHNMSG {[0m
+[1;36mCurrently using chat channel number [37m%d [33m%s[36m
+} T Chat channel in use message
+
+ This message tells the user the highest global chat
+ channel number available.
+
+HICHMSG {[0;1;36mHighest channel in use is [37m%d[36m.
+} T Highest channel available message
+
+ This is the header for listing others on the user's global
+ chat channel.
+
+USRONCH {[0m
+[1;36mOther users currently on your global chat channel:
+} T Header for listing others on global chat channel
+
+ This is the output of each person who is on the user's
+ global chat channel.
+
+CHUSR {[0;1m%s
+} T Output of each person on user's chat channel
+
+ This message informs the user that no one else is
+ currently using his global chat channel.
+
+NOCHUSR {[0m
+[1;36mNobody is currently using your global chat channel.
+} T No one on chat channel message
+
+ This message informs people on a global chat channel that
+ the user has just left them.
+
+LEFTCH {[0m
+[1m%s [36mhas just left your global chat channel.
+} T User has left global chat channel message
+
+ This message informs people on a global chat channel that
+ the user has just joined them.
+
+JOINCH {[0m
+[1m%s [36mhas just joined your global chat channel.
+} T User has joined global chat channel message
+
+ This message tells the user the topic of the global chat
+ channel in question.
+
+CHTOPMSG {[0;1;36mChannel [33m%-12.1d[32m%-20.1d[37m%s
+} T Global chat channel topic message
+
+ This message tells the user he has selected an invalid
+ global chat channel.
+
+BDSMSG {[0m
+[1;35mYou can only select a channel number between [37m0 [35mand [37m%d[35m.
+} T Invalid global chat channel number message
+
+ This message informs the user that the highest global chat
+ channel is reserved for Sysops only.
+
+SYSCMSG {[0m
+[1;35mSorry, but you don't have access to this channel.
+} T Sysop only global chat channel message
+
+ This message informs the user that his selection of a
+ global chat channel has been accepted.
+
+NCHMSG {[0m
+[1;36mOk, your global chat channel number has been set to [37m%s[36m.
+} T User selected new global chat channel message
+
+ This message tells the user the topic of the global
+ chat channel he has just selected.
+
+CHTPMSG {[0m
+[1;36mChannel topic: [33m%s
+} T Topic of global chat channel selected message
+
+ This message informs the user that he has tried to select
+ a topic for a global chat channel which is longer than
+ allowed.
+
+TPBIGMSG {[0m
+[1;35mYour topic size is too large. You may have up to [37m%d [35mcharacters in your topic.
+} T Topic selected for global chat channel too large message
+
+ This message tells the user which global chat channel
+ topics he may change.
+
+TPCNMSG {[0m
+[1;36mYou can only change the topics of channel [37m1 [36mthrough channel [37m%d[36m.
+} T Allowable global chat channels for topic change message
+
+ This message informs the user that the desired global
+ chat channel topic has been cleared.
+
+TPCLMSG {[0m
+[1;36mOk, global chat channel topic for channel [37m%d [36mhas been cleared.
+} T Global chat channel cleared message
+
+ This message tells the user that the topic he wanted his
+ global chat channel set to has been accepted.
+
+NWTPMSG {[0m
+[1;36mNew global chat channel topic for channel [37m%d [36m: [32m%s
+} T New global chat channel topic message
+
+ This message informs all users in a global chat channel
+ that the topic has been cleared, and who cleared the
+ topic.
+
+CLRTPMSG {[0m
+[1;36mGlobal chat channel topic for channel [37m%d [36mhas been cleared by [33m%s[37m.
+} T Global chat channel topic clearing message
+
+ This message informs all users in a global chat channel
+ that the topic has been changed, and who changed the
+ topic.
+
+TPNWMSG {[0m
+[1;36mNew global chat channel topic for channel [37m%d [36mhas been changed to "[32m%s[36m" by [33m%s[36m.
+} T Global chat channel topic changing message
+
+ This is the output to a user using the Display all global
+ chat channels command.
+
+ALLCNMSG {[0;1;33m%-29.25s[36m%-16.5s[37m%s
+} T Display all global chat channels output
+
+ This message tells the user that his global chat is turned
+ off, or set to channel 0.
+
+CNZMSG {[0m
+[1;36mYour global chat is turned off (set to channel [37m0[36m).
+} T User has global chat turned off message
+
+ This is the output when a user sends a message over a
+ global chat channel.
+
+CTMSG {[0;1m%s
+} T Global chat channel output message
+
+ This is the main telegram option menu of selections.
+
+TMMSG {[0m
+[1;36;44m([37mR[36m)eply ([37mS[36m)how again ([37mN[36m)ext ([37mE[36m)xit[0m } T Main telegram option menu
+
+ This is a message confirming to the user that his telegram
+ was sent.
+
+TSNTMSG {[0m
+[1;34mTelegram sent to [37m%s[34m.
+} T Telegram sent confirmation message
+
+ This message informs the user that no telegram reply was
+ sent.
+
+NORPLY {[0m
+[1;34mNo reply has been sent to [37m%s[34m.
+} T Telegram not sent message
+
+ This message notifies a person that someone has just
+ written them a telegram.
+
+TRCMSG {[0m
+[1m%s [34mhas just written a telegram to you.
+Type [33m%s [34mto read it.
+} T Telegram written to user message
+
+ This message informs the user that he has no more
+ telegrams.
+
+NOTMMSG {[0m
+[1;34mYou have no telegrams.
+} T No telegrams to user message
+
+ This message indicates the start of the user's next
+ telegram.
+
+NXTTMSG {[0m
+[1;34mNext telegram:
+
+} T Start of next telegram message
+
+ This is the telegram message itself.
+
+TTXTMSG {[0;1;33m%s
+} T Telegram message
+
+ This message is the prompt for the user to enter a
+ telegram.
+
+TMRMSG {[0m
+[1;34mPlease enter your telegram reply now, or '[36mX[34m' to quit.
+} T Prompt for entering telegram reply
+
+ This is the output for when a user requests help at the
+ main telegram option menu.
+
+THLPSTG {[0m
+[1;34mPlease select one of the following choices
+
+([37mR[34m) [36mallows you to reply to your telegram
+[34m([37mS[34m) [36mdisplays your telegram again
+[34m([37mN[34m) [36mshows you your next telegram (if any)
+[34m([37mE[34m) [36mstops displaying your telegrams
+} T Telegram option menu help message
+
+ This message is displayed when a user enters a bad user-id
+ to send a telegram to, or tries to send a blank telegram.
+
+TSEMSG {[0m
+[1;35mTelegram sending error. The User-ID you entered is not valid.
+} T Telegram user-id sending error message
+
+ This message is displayed when a user attempts to send a
+ blank telegram to someone.
+
+BTMMSG {[0m
+[1;35mTelegram sending error. You cannot send a blank telegram.
+} T Blank telegram send attempt error message
+
+ This message is displayed to a user attempting to post
+ more credits than the allowable maximum in the post
+ credits global command (MXPST) who also lacks the key
+ to post higher amounts.
+
+HICRDMSG {[0m
+[1;35mYou may only post from [37m%s [35mto [37m%s [35mcredits.
+} T Invalid amount of posted credits message
+
+ This message is displayed at log-on to users who have a
+ telegram waiting for them.
+
+TWMSG {[0m
+[1;34mYou have a telegram waiting.
+Type [37m%s [34mto read it.
+} T Telegram waiting for user message
+
+ This message is displayed to users who try to reply to a
+ telegram from a user who is tagged for deletion or whose
+ account no longer exists.
+
+TDLMSG {[0m
+[1;34mSorry, but [0;36m%s [1;34mis no longer a user on this system.
+} T Reply to Invalid user telegram message
+
+ This is the help message for the macro global command.
+
+MACHLP {[0m
+[1;32mYou can have up to [37m10 [32mmacros of up to [37m%d [32mcharacters long. You can also
+define the command strings to call the macros with, which can be up to [37m%d
+[32mcharacters long. Macro command strings must be only one word. Each command
+string calls the corresponding macro; for example, macro 0 is called by
+typing the command string for macro 0. The defaults for macro commands are:
+
+[33m%s %s or %s      This command, help on macros
+%s # <command>  Sets macro # (0-9) command string to <command>
+%s # <macro>    Sets macro # (0-9) macro to <macro>
+%s             Shows your command strings for each macro
+%s             Shows your macros (can be blank)
+
+[32mTyping a macro's command string executes that macro. You can add extra input
+on the end of the macro command and this input will be added to the
+macro. For example, assuming your macro 0 command string is =m0, and you
+have set the macro to /go, you could type "=m0 top" to go to the main menu.
+You can clear a macro by leaving <macro> blank.
+You cannot clear a macro command string
+} T Macro help message
+
+ This message tells the user he entered an invalid macro
+ number.
+
+BDNMSG {[0m
+[1;33mPlease enter a number from [37m0 [33mto [37m9[33m.
+} T Bad macro number input message
+
+ This message tells the user that he cleared the desired
+ macro.
+
+MACCLR {[0m
+[1;33mMacro [37m%d [33mhas been cleared.
+} T Macro cleared message
+
+ This message tells the user he entered a macro that is too
+ long (must be 39 characters or less).
+
+MTLMSG {[0m
+[1;33mPlease enter a macro of [37m%d [33mcharacters or less.
+} T Macro too long message
+
+ This message tells the user he changed the desired macro.
+
+MACCHG {[0m
+[1;33mMacro [37m%d [33mchanged to [36m%s[33m.
+} T Macro changed message
+
+ This message tells the user he entered a macro command
+ string that is too long (must be 4 characters or less).
+
+CTLMSG {[0m
+[1;33mMacro command strings cannot be longer than [37m%d [33mcharacters.
+} T Macro command string too long message
+
+ This message tells the user that his macro plus the input
+ he added are too long.
+
+MTOLNG {[0m
+[1;33mWhen combined with the input you typed, your macro is too long. Your total
+macro can be no longer than [37m%d [33mcharacters
+} T Total macro too long message
+
+ This message tells the user he changed the desired macro
+ command string.
+
+CMDCHG {[0m
+[1;33mMacro command string [37m%d [33mchanged to [36m%s
+} T Macro command string changed message
+
+ This is the header for command string listing.
+
+CMDHDR {[0m
+[1;32mYour current macro command strings :
+
+} T Header for listing macro command strings
+
+ This is the header for macro listing.
+
+MACHDR {[0m
+[1;32mYour current macros :
+
+} T Header for listing macros
+
+ This is the output format for listing macro command
+ strings.
+
+CMD {[0;1;32mCommand [37m%d [32m: [33m%s
+} T Macro command output format
+
+ This is the output format for listing macros.
+
+MACOUTFM {[0;1;32mMacro [37m%d [32m: [33m%s
+} T Macro output format
+
+ This is the help message for the global help command.
+
+HLPHLP {[0m
+[1;32mThis is a global command that lists all the global commands and their functions
+} T Global help command help message
+
+ This is the help message for the global instant log-off
+ command.
+
+LOFFHLP {[0m
+[1;36mThis global command will log you off the system immediately from anywhere on
+the BBS. It is used as follows:
+[33m%s
+} T Quick Log-off help message
+
+ This is the help message for the page console global
+ command (1 of 2).
+
+CPGHLP1 {[0m
+[1;36mThis global command will produce a beep at the Sysop's computer, alerting
+him that you need assistance. It may also alert all Sysops on line that
+you would like help, and is used as follows:
+[33m%s
+} T Page Console help message (1 of 2)
+
+ This is the help message for the page console global
+ command (2 of 2).
+
+CPGHLP2 {[0m
+[1;36mSysops may end the current console page. You may wish to do this if you have
+set multiple beeps and you are on-line. To stop the current console page and
+end those beeps, you simply type:
+[33m%s
+} T Page Console help message (2 of 2)
+
+ This message informs a Sysop who is attempting to end a
+ console page that there is not one going on at the
+ present time.
+
+NOPGBUD {[0m
+[1;34mSorry, but no page is going on to end right now.
+} T No page now to stop message
+
+ This message informs a Sysop who is attempting to end a
+ console page that it has been ended.
+
+PGQUIT {[0m
+[1;34mOk, the current console page has been ended.
+} T Console page ended message
+
+ This message is displayed to a user who pages the console.
+
+PGMSG {[0m
+[1;32mPaging Sysop at console...
+} T Inform user of page action message
+
+ This message is displayed to a user who pages the console
+ if online Sysops are notified of console pages.
+
+PGALLMSG {[0;32m...and paging all assistants on-line
+} T Inform user of paging assistants message
+
+ This message informs all on-line Sysops of a user who
+ has paged the console.
+
+SYSPG {[0m
+[1m%s [34mjust paged the console.
+} T Message to Sysops informing them of page
+
+ This message informs the user of his ANSI mode after
+ he toggles it.
+
+ANSIMSG {[0m
+[1;36mOk, ANSI mode set to [37m%s[36m.
+} T Display ANSI setting
+
+ This is the help message for the ANSI toggle global
+ command.
+
+ANSHLP {[0m
+[1;36mThis global command toggles your [33mANSI [36msetting on and off, which controls
+whether you see [33mANSI [36mcolors and graphics characters. It is used as follows:
+[37m%s
+[36mYour current setting is [33mANSI [37m%s
+} T ANSI toggle help message
+
+ This message informs the user of the status of his busy
+ flag after he toggles it.
+
+BUSYMSG {[0m
+[1;36mOk, your "Busy" flag is set to [33m%s[36m.
+} T Display busy setting
+
+ This is the help message for the busy flag toggle global
+ command (1 of 2).
+
+BUSYHLP1 {[0m
+[1;36mThis global command toggles your busy flag on and off. Turning the flag
+on disables interrupts like pages, while turning it off enables them. The
+command is used as follows:
+[33m%s
+[36mYour current setting is [37m%s
+} T Busy toggle help message (1 of 2)
+
+ This is the help message for the busy flag toggle global
+ command (2 of 2).
+
+BUSYHLP2 {[0m
+[1;36mYou can also turn off the "Busy" flag of another on-line user. This
+is done as follows:
+[33m%s <userid>         Turns off <userid>'s "Busy" flag
+} T Busy toggle help message (2 of 2)
+
+ This is the help message for the duplex mode toggle global
+ command.
+
+DUPHLP {[0m
+[1;36mThis global command toggles your duplex, or echo, mode. At half duplex, your
+your input will not echo to you on the BBS, while at full duplex your input
+will echo to you. In most cases you should probably keep your setting at
+full duplex. The mode is toggled by typing:
+[33m%s
+[36mYour current duplex mode setting is [37m%s [36mduplex
+} T Duplex mode toggle help message
+
+ This message informs the user of his duplex mode setting
+ (half or full).
+
+DUPTOG {[0m
+[1;36mOk, your duplex (echo) mode has been set to [33m%s [36mduplex.
+} T Duplex mode setting message
+
+ This message informs the user of his editor type (line or
+ full-screen) after he toggles it.
+
+EDITTYP {[0m
+[1;36mOk, editor type is now set to [33m%s [36meditor.
+} T Display editor type
+
+ This is the help message for the editor type toggle
+ global command.
+
+EDITHLP {[0m
+[1;36mThis global command toggles your default editor type from line to full
+screen and vice-versa, and is used as follows:
+[37m%s
+[36mYour current editor type is [37m%s
+} T Editor type help message
+
+ This message is displayed to a user who selects the relog
+ global command.
+
+RLGMSG {[0m
+
+[1;31mRe-logging on now...
+
+} T Re-log message
+
+ This is the help message for the relog global command
+ (1 of 2).
+
+RLGHLP1 {[0m
+[1;36mThis global command re-logs you onto the board; it is the same as typing
+'R' at the log-off screen if you are given that option, and is used as
+follows:
+[33m%s
+} T Re-log help message (1 of 2)
+
+ This is the help message for the relog global command
+ (2 of 2).
+
+RLGHLP2 {[0m
+[1;36mYou may also force another user to re-log. The command is used as follows:
+[33m%s <user-id> (+)   Forces <user-id> to re-log (optionally inform)
+
+[36mThe [33m(+) [36mis optional and you should add it only if you want the person you
+re-log to know you've re-logged him.
+} T Re-log help message (2 of 2)
+
+ This is the colorize input help message.
+
+CLRHLP {[0m
+[1;36mThis command allows you to put colors into your input. You can colorize the
+letters and the background and make special effects like blinking letters
+using this command. To colorize your input, you just type what you would
+normally type, adding a few special commands right into your input where
+you want to colorize. For coloring letters and background you can choose
+from eight colors, which you enter in your input as 0 to 7 (see below).
+Colors:
+[37m0...........[30mBlack  [37m1...........[31mRed  [37m2...........[32mGreen  [37m3...........[33mYellow
+[37m4............[34mBlue  [37m5.......[35mMagenta  [37m6............[36mCyan  [37m7............White
+[36mSpecial effects you can choose from are numbered from 0 to 3, and cause the
+following effects:
+[37m0........[0;36mNormal output     [1;37m1........[36mBold output (default)
+[37m2........[5;36mBlinking text     [0;1m3........[0;30;47mReverse colors (background and foreground)[1;36;40m
+[0;1;36mTo color the letters and numbers of your input, you would put the following
+command string in front of the input you want colored:
+[33m%c%c#        Colors your text, where # is the color number (0-7)
+[0;1;36mTo color the background of your input, you would put the following command
+string in front of the input you want colored:
+[33m%c%c#        Colors your background, where # is the color number (0-7)
+[0;1;36mTo use special effects in your input, you would put the following command
+string in front of the input you would like to put the effect in:
+[33m%c%c#        Gives a special effect, where # is the effect number (0-3)
+} T Colorize input help message
+
+ This message informs the user that the person he is trying
+ to re-log or set "UnBusy" cannot be disturbed while in
+ Opchat.
+
+INCHAT {[0m
+[1;35mSorry, but [37m%s [35mis currently in Opchat and cannot be disturbed at this time.
+} T User is in Opchat message
+
+ This message informs the user that the person he wishes
+ to re-log is transferring a file and cannot be re-logged
+ at this time.
+
+REINFIL {[0m
+[1;35mSorry, but [37m%s[35m cannot be re-logged during a file transfer.
+} T User transferring file can't be re-logged message
+
+ This message is displayed to a user who is attempting to
+ page the console before the amount of time between pages
+ you've selected is up.
+
+NOPG {[0m
+
+[1;36mThe console has already been paged in the last [37m%d [36mseconds; please try later.
+
+} T Cannot page console now message
+
+ This message is displayed to a user who is attempting to
+ page the console when the Sysop is currently being paged.
+
+NOWPG {[0m
+
+[1;36mThe console is already being paged right now; please try later.
+
+} T Console being paged now messge
+
+ This is the help message for the information on membership
+ global command.
+
+MEMHLP {[0m
+[1;36mThis global command prints information on board membership and how to join,
+and is used as follows:
+[33m%s
+} T Membership help message
+
+ This message is displayed to a user who has toggled his
+ IBM mode setting.
+
+IBMMSG {[0m
+[1;36mOk, IBM mode set to [33m%s[36m.
+} T IBM mode setting message
+
+ This is the IBM mode toggle help message.
+
+IBMHLP {[0m
+[1;36mThis global command controls whether your PC type is seen as an IBM or not
+(this affects the graphics you see), and is used as follows:
+[33m%s
+[36mYour current setting is [37m%s
+} T IBM mode help message
+
+ This message is displayed to let the user know his new
+ screen width size.
+
+SCNSET {[0m
+[1;36mOk, your screen width has been set to [37m%d [36mcharacters.
+} T Screen width setting message
+
+ This message is displayed to users who attempt to use an
+ invalid screen width setting.
+
+NOSET {[0m
+
+[1;36mYou must select a screen width between [37m%d [36mand [37m%d [36mcharacters.
+
+} T Screen width setting error message
+
+ This is the help message for the set screen width global
+ command.
+
+SCNHLP {[0m
+[1;36mThis global command sets your screen width to between [37m%d [36mand [37m%d [36mcharacters,
+and is used as follows:
+[33m%s <width>
+[36mYour current setting is [37m%d [36mcharacters
+} T Screen width help message
+
+ This message is displayed to let the user know his new
+ screen length setting.
+
+LNGSET {[0m
+[1;36mOk, your screen length has been set to [37m%d [36mlines.
+} T Screen length setting message
+
+ This message is displayed to users who attempt to use an
+ invalid screen length setting.
+
+NOLNG {[0m
+
+[1;36mYou must select a screen length between [37m%d [36mand [37m%d [36mlines.
+
+} T Screen length setting error message
+
+ This is the help message for the set screen length global
+ command.
+
+LNGHLP {[0m
+[1;36mThis global command sets your screen length to between [37m%d [36mand [37m%d [36mlines, and
+is used as follows:
+[33m%s <length>
+[36mYour current screen length is [37m%s [36mlines
+} T Screen length help message
+
+ This is the help message for the user credit information
+ global command.
+
+CRDHLP {[0m
+[1;36mThis global command gives you information about your account and tells you
+how many credits you have, and is used as follows:
+[33m%s
+} T User credit help
+
+ This is the header for the Who's Online global command
+ output.
+
+WHOMSG {[0m
+
+                              [1;34mWho's Online Now
+        [37m%s                                                 %s
+} T Who's online header
+
+ This is the topics list for the Who's Online global
+ command output (1 of 6).
+
+TOPIC1 {[0m
+[1mLine [33mUser-ID         [32mModule           [34mClass    [36mSex [35mAge [31mBaud  [0;33mMin On   [36mFlags
+[32m------------------------------------------------------------------------------
+} T Who's online topics list (1 of 3)
+
+ This is the topics list for the Who's Online global
+ command output (5 of 6).
+
+TOPIC2 {[0m
+[1mLine [33mUser-ID         [32mModule          [36mSex [35mAge [31mCalling From        [0;33mMin On [36mFlags
+[32m------------------------------------------------------------------------------
+} T Who's online topics list (2 of 3)
+
+ This is the topics list for the Who's Online global
+ command output (3 of 3).
+
+TOPIC3 {[0m
+[1mLine [33mUser-ID                        [32mModule                    [34mClass
+   [36mSex [35mAge [31mBaud  [0;33mMin On   [36mFlags
+[32m------------------------------------------------------------------------------
+} T Who's online topics list (3 of 3)
+
+ This is the help message for the Who's Online global
+ command.
+
+WHOHLP {[0m
+[1;36mThis global command tells you who is currently on-line and where they are,
+along with other useful information. It is more detailed than /#, and is
+used as follows:
+[33m%s
+[36mYou can choose whether or not to have your age displayed to others. Your
+current setting %s display your age.
+To allow your age to be displayed, type:
+[33m%s ON
+[36mTo prevent your age from being displayed, type:
+[33m%s OFF
+[36mNormally when you type [33m%s[36m, your default Who's Online choice will be displayed.
+However, you can view a different setting by typing:
+[33m%s <#>      where <#> is from [37m%d [33mto [37m%d
+[36mYour current default Who's Online choice is [37m%s[36m.
+To change your default Who's Online choice, type:
+[33m%s SET <#>  where <#> is from [37m%d [33mto [37m%d
+} T Who's online help
+
+ This message informs the user of his new setting for
+ displaying his age in the Who's Online display.
+
+SHOWAGE {[0m
+[1;36mOk, your setting to display your age to others in Who's Online has been turned
+[37m%s[36m.
+} T Show age setting message
+
+ This message informs the user of his new default Who's
+ Online display choice.
+
+DEFLTWHO {[0m
+[1;36mOk, your new current Who's Online display has been set to [37m%d[36m.
+} T Default Who's Online display setting message
+
+ This message informs the user that he has selected an
+ invalid Who's Online display choice.
+
+BADWHO {[0m
+[1;35mSorry, but you can only select from [37m%d [35mto [37m%d [35mas your Who's Online display
+choices.
+} T Invalid Who's Online choice message
+
+ This is the output for the date and time global command.
+
+DATTIM {[0m
+
+           [1;34mToday's Date : [37m%s         [34mCurrent Time : [37m%s
+
+} T Date and Time message
+
+ This is the help message for the date and time global
+ command.
+
+DTHLP {[0m
+[1;36mThis global command gives you the current date and time, and is used as
+follows:
+[33m%s
+} T Date and Time help
+
+ This is a message describing the usage of the post credits
+ global command.
+
+PSTUSG {[0m
+[1;32mThis command allows you to post credits to users, and is used as follows:
+[33m%s <user-id> [number of credits] [P/F] (+) [32mwhere [33m[P] [32mis [37mPAID [32mcredits, and [33m[F] [32mis
+[37mFREE [32mcredits, and the optional + tells the user you made the
+posting if added.
+} T Post credits usage help
+
+ This is the help message for the post credits global
+ command.
+
+PSTHLP {[0m
+[1;36mThis global command allows you to post credits to a user in the following way:
+[33m%s <user-id> [number of credits] [P/F] (+)
+[36mThis posts [33m[number of credits] [36mcredits to [33m<user-id>[36m, with the [33m[P] [36mmeaning
+they are [37mPAID [36mcredits and the [33m[F] [36mmeaning they are [37mFREE [36mcredits.
+The optional [33m(+) [36mis added if you want the user to know you made the posting.
+You may post between +/- [37m%s [36mcredits per use of this command.
+} T Post credits help message
+
+ This message informs the user that he has entered too high
+ or too low a number in his attempt to post credits.
+
+PSTLIMS {[0m
+[1;35mSorry, but this command only allows you to post between [37m%s [35mand [37m%s [35mcredits per
+posting.
+} T Too high or low a number message
+
+ This message is displayed to a user who attempts to post
+ zero credits.
+
+NOZEROP {[0m
+[1;35mSorry, but you cannot post [37m0 [35mcredits.
+} T Can't post zero credits message
+
+ This message is displayed to a user who attempts to post
+ a credit amount that would cause a positive overflow.
+
+HIOFLW {[0m
+[1;33m%s [35mcan have at most [37m%s [35mmore positive credits.
+} T Positive overflow on credit post message
+
+ This message is displayed to a user who attempts to post
+ a credit amount that would cause a negative overflow.
+
+LOOFLW {[0m
+[1;33m%s [35mcan have at most [37m%s [35mmore negative credits.
+} T Negative overflow on credit post message
+
+ This message is displayed to a user who attempts to post
+ or transfer to an account tagged for delete.
+
+PSTDLT {[0m
+[1;33m%s[35m's account is tagged for deletion.
+} T Post or transfer to deletion tagged account message
+
+ This is the help and usage message for the extend time
+ on-line global command.
+
+TEXTHLP {[0m
+[1;32mThis command allows you to extend the on-line time of users who have a limit
+per call or limit per day in how long they can be on the BBS. You cannot
+extend a user's on-line time beyond the daily maximum, but you basically
+wipe out any time the user has been on-line for the day with this command.
+Note that you can also remove on-line time from a user. If you post a
+negative number of minutes to extend, you make it so the user has been
+on-line for that amount of time already today. You cannot remove below the
+daily limit; in other words all you can do is keep the user from logging
+back on for that day. Within these limits, you can extend or remove from
+[33m%d [32mto [33m%d [32mminutes per use of this command. The command is used as follows:
+[33m%s <user-id> [minutes to extend or remove] (+)
+[32mThe optional [33m(+) [32minforms the user who extended his time.
+} T Time extend help and usage message
+
+ This message informs the user that he has entered an
+ invalid number of minutes of on-line time to extend or
+ remove.
+
+BADTIME {[0m
+[1;35mYou have entered an invalid number of minutes of on-line time to extend or
+remove. You can select from [37m%d [35mto [37m%d [35mminutes.
+} T Time extend minutes error message
+
+ This message informs the user that CLASS data for the
+ desired class cannot be found.
+
+NOCLSDAT {[0m
+[1;35mClass data for the [37m%s [35mclass cannot be found for some reason. This command
+cannot be done at this time.
+} T No class data error message
+
+ This message informs the user that he cannot extend a
+ user's time on-line by zero minutes.
+
+NOZEROM {[0m
+[1;35mSorry, but you can't extend time on-line by [37m0 [35mminutes.
+} T Can't extend zero minutes message
+
+ This message informs the user that the time on-line of
+ the person he specified could not be changed.
+
+NOTMCHG {[0m
+[1;33m%s[35m's time on-line cannot be changed at this time. This could be due to
+being in a class which has unlimited time per call and per day, for example.
+} T Time could not be changed message
+
+ This message informs the user that the on-line time for a
+ user's current call has been changed.
+
+CALLTM {[0m
+[1;33m%s[35m's time on-line for the current call has been %s by [37m%d [35mminutes.
+} T Time for call changed message
+
+ This message informs the user that the on-line time for the
+ day for a user has been changed.
+
+DAYTM {[0m
+[1;33m%s[32m's time on-line for today has been %s by [37m%d [32mminutes.
+} T Time for day changed message
+
+ This is the help message for the eject user from system
+ global command.
+
+BTHLP {[0m
+[1;32mThis global command will eject a user from the system. It is used as follows:
+[33m%s <user-id> (+) to eject <user-id> from the BBS
+The optional [33m(+) [32mwill inform the user who ejected him.
+} T Boot user help message
+
+ This message is displayed to a user who has been ejected
+ from the system and suspended.
+
+BTNSUS {[0m
+
+[1;33m%s [0;35mhas just booted and suspended you...goodbye
+
+} T Boot and suspend user goodbye message
+
+ This message is displayed to a user who has been ejected
+ from the system.
+
+BTMSG {[0m
+
+[1;33m%s [0;35mhas just booted you off the system...goodbye
+
+} T Boot user goodbye message
+
+ This message is displayed to a user who attempts to eject,
+ re-log, or toggle the busy flag of a User-ID who is not
+ on-line.
+
+NOTON {[0m
+[1;35mSorry, but [33m%s [35mis not currently on-line.
+} T User-ID given is not on-line
+
+ This is the help message for the repeat previous command
+ global command.
+
+RPTHLP {[0m
+[1;36mThis global repeats the last command you entered. This command will not work
+with global commands from other modules, like the /p <user-id> page global.
+You can type more after the command string if you would like, and the
+command will add the two strings together to make create new input.
+For example, if your command string is =r, you and your last command was
+/go, you could type =r top and the new input would be /go top.
+It is called as follows:
+[33m%s <optional input>
+} T Repeat last command global command help
+
+ This is the help message for the list new users global
+ command.
+
+NEWHLP {[0m
+[1;36mThis global command lists new sign-ups for today ( default ), or for the
+date you specify in MM/DD/YY format where MM is the month, DD is the day,
+and YY is the last two digits of the year. It is called as follows:
+[33m%s to see today's new sign-ups
+%s [MM/DD/YY] to see new sign-ups for another date
+} T List new sign-ups global command help
+
+ This is the header for Global Chat Channel help.
+
+CHATHDR {[0m
+                [1;34mGlobal Chat Channel help and usage
+} T Chat Channel help header
+
+ This is the help message for Global Chat Channels
+ (1 of 3).
+
+CHATHLP1 {
+[33m%s %s              [36mShows each user's chat channel and topic
+} T Global Chat Channel help 1
+
+ This is the help message for Global Chat Channels
+ (2 of 3).
+
+CHATHLP2 {[0;1;33m%s %s                 [36mToggles echo of global chat output on and off
+[33m%s %s <topic>        [36mSets your chat channel's topic to <topic>, or if
+                         no <topic>, clears the channel's topic
+[33m%s %s <channel>        [36mSets your chat channel to <channel>. Setting
+                         channel to 0 turns off global chat messages, while
+                         only Sysops may use the highest available channel
+[33m%s %s                 [36mShows all chat channels with topics in use,
+                         as well as how many users are using this channel
+[33m%s ?                    [36mShows your current chat channel
+[33m%s %s               [36mToggles your notices when users join or
+                         leave your chat channel on and off
+[33m%s <output>             [36mWhatever you type in <output> is displayed to
+                         everyone else on your chat channel
+} T Global Chat Channel help 2
+
+ This is the help message for Global Chat Channels
+ (3 of 3).
+
+CHATHLP3 {[0;1;33m%s %s                [36mClears all global chat channel topics
+[0;1;33m%s %s #              [36mClears global chat channel # topic
+[0;1;33m%s %s # #            [36mClears global chat channel topics in channels # to #
+} T Global Chat Channel help 3
+
+ This message informs the user of his Chat Channel echo
+ toggle setting.
+
+ECHTOG {[0m
+[1;36mOk, your global chat channel echo has been turned [33m%s[36m.
+} T Chat Channel echo toggle message
+
+ This message informs the user of his Chat Channel notices
+ of users joining or leaving the channel setting.
+
+NOTSET {[0m
+[1;36mOk, your notices of others joining or leaving your global chat channel has
+been turned [33m%s[36m.
+} T Chat Channel notice toggle message
+
+ This is the header for listing Global Chat Channels and
+ their topics.
+
+TPCHDR {[0m
+                 [1;34mGlobal Chat Channels with Topics
+
+[33mChannel             Users on channel    Topic
+[32m-----------------------------------------------------------------------
+} T Global chat channel topics header
+
+ This is the header for listing everyone's Global Chat
+ Channel and their topics.
+
+CHANDIS {[0m
+                [1;34mUsers in all Chat Channels
+
+[33mUser                         Channel         Topic
+[32m--------------------------------------------------------------------------
+} T Global chat channel display header
+
+ This is the help message for telegrams (1 of 2).
+
+TELHLP1 {[0m
+[1;36mTelegrams are like a quick and easy to use Email. You can send a message to
+another user that they will receive whether they are on-line or not, and even
+if they are "busy" and cannot receive pages.
+Typing [33m%c<userid> [message] [36msends a telegram to userid, with the content being
+message. You can type [33m%s [36mto read any telegrams you have. If you have one,
+you can choose to ([37mR[36m)eply to it, or read the ([37mN[36m)ext one, ([37mS[36m)how your telegram
+again, or simply ([37mE[36m)xit. Telegrams are deleted after you read them.
+[0;1;36mYou are notified when you receive a telegram. You can toggle notification on
+and off. However, you are always notified when you receive a telegram from a
+Sysop. To change your setting, which is ON by default, simply type:
+[33m%s              [36mToggles setting on and off
+[33m%s ?            [36mDisplays your current setting
+You can delete all telegrams to you from a desired person. This command will
+remove all telegrams for you from this person without your having to see them.
+You cannot delete a Sysop's telegrams, however. Be warned that this may take
+a little time. This is done as follows:
+[33m%s <user-id>    [36mDeletes all telegrams to you from <user-id>
+[0;1;36mYou can prevent up to 5 users from sending you telegrams. You cannot prevent
+a Sysop from sending you telegrams, however. The command to do this is a
+toggle, and is used as follows:
+[33m%s ?            [36mShows who you have blocked from sending telegrams
+[33m%s <user-id>    [36mBlocks/unblocks <user-id> from sending you telegrams
+} T Global telegram help message (1 of 2).
+
+ This is the help message for telegrams (2 of 2).
+
+TELHLP2 {[0;1;36mYou can delete all telegrams currently in the telegram database that have
+been sent from a specified user-id. This is done as follows:
+[33m%s <user-id>    [36mDeletes ALL telegrams sent by <user-id>
+NOTE: USE WITH CAUTION!!! This is disk-intensive and may take some time
+} T Global telegram help message (2 of 2).
+
+ This is the header for printing out a user's telegram.
+
+TELEHDR {[0m
+[1;34mFrom: [37m%s
+[34mDate: [33m%s
+[34mTime: [33m%s
+
+} T Telegram header information
+
+ This is the output for users talking in a Global Chat
+ Channel.
+
+CHATOUT {[0m
+[1;33m*** [32mChannel [36m%d [33m: [37m%s [33m***
+} T Chat channel message output information
+
+ This message informs the user of his continuous output
+ setting.
+
+CNTOUT {[0m
+[1;36mOk, continuous output has been toggled [33m%s[36m.
+} T Continuous output toggle information
+
+ This is the help message for the toggle continuous output
+ global command.
+
+CNTHLP {[0m
+[1;36mThis global command allows you to toggle continuous output on and off.
+Turning continuous output on means that information printed to your screen
+is not paused, while turning continuous output off means that information
+printed to your screen will be paused until you press a key if you have more
+than a screenful of information. It is used as follows:
+[33m%s
+[36mYour current setting is [37m%s
+} T Continuous output help information
+
+ This is the help message for system-wide broadcasts.
+
+BRCSTHLP {[0m
+[1;36mThis command allows you to send a message to every user on-line who is able
+to see the broadcast (doesn't have their "Busy" flag set). It is used as
+follows:
+[33m%s <message> [36mwhere message is what you want the users to see
+} T System-wide broadcast help message
+
+ This is the system-wide broadcast message that users see.
+
+BCSTMSG {[0m
+[1;31mFrom [33m%s [31m:
+[37m%s
+} T System-wide broadcast message
+
+ This message tells the user that his system-wide broadcast
+ has been sent to all users.
+
+BCST {[0m
+[36m<<Message sent to all>>
+} T System-wide broadcast sent to all message
+
+ This is the help message for credit transfers.
+
+TRNHLP {[0m
+[1;36mThis global command allows you to transfer some or all of your credits to
+another user. You transfer credits as follows:
+[33m%s <user-id to receive credits> [amount of your credits to transfer]
+[36mYou may transfer between [37m%s [36mand [37m%s [36mcredits per transfer.
+} T Transfer credits help message
+
+ This message informs the user that he is not transferring
+ the required minimum number of credits.
+
+MINTRN {[0m
+[1;35mYou need to transfer at least [37m%s [35mcredits to be allowed to transfer credits.
+} T Need minimum amount of credits transferred message
+
+ This message tells the user he cannot transfer zero
+ credits.
+
+NOZEROT {[0m
+[1;35mSorry, but you can't transfer [37m0 [35mcredits.
+} T Can't transfer zero credits message
+
+ This message tells the user he has entered a garbage
+ number or a number which is too large for credit
+ transfer.
+
+BADTRN {[0m
+[1;35mYou can only transfer between [37m1 [35mand [37m9999999 [35mcredits.
+} T Bad number in transfer credits
+
+ This message informs a user that the credit transfer
+ he desired has been done.
+
+TDNMSG {[0m
+[1;36mOk, [37m%s [36mof your credits have been transferred to [33m%s[36m.
+} T Transfer completed message
+
+ This message informs the user that the person he wishes
+ to transfer credits to does not have access to receive
+ transferred credits.
+
+CANTRCV {[0m
+[1;35mSorry, but [33m%s [35mdoes not have access to receive credit transfers.
+} T Receiver cannot be transferred credits to message
+
+ This message is displayed to a user who tries to transfer
+ more credits than he currently has.
+
+NOTENUF {[0m
+[1;35mYou only have [37m%s [35mcredits to transfer to another user.
+} T Not enough credits to do this transfer message
+
+ This message is displayed to a user who is attempting a
+ credit transfer that would cause an overflow of the
+ recipient's credits.
+
+CROVFLW {[0m
+[1;33m%s [35mmay only be transferred up to [37m%s [35mmore credits.
+} T Overflow of recipient's credits through transfer message
+
+ This is the help message for days in class transfers.
+
+TDYHLP {[0m
+[1;36mThis global command allows you to transfer some of your days in class to
+another user. You transfer days as follows:
+[33m%s <user-id to receive days> [number of your days to transfer]
+[36mYou may transfer between [37m%d [36mand [37m%d [36mdays per transfer
+} T Transfer days help message
+
+ This message informs the user that he has tried to
+ transfer either too high or too low a number of days
+ in class.
+
+BADTDY {[0m
+[1;35mYou may only transfer between [37m%d [35mand [37m%d [35mdays in class.
+} T Bad number in transfer days in class message
+
+ This message informs the user that he cannot transfer all
+ of his days in class or more days than he currently has.
+
+TOOMANY {[0m
+[1;35mSorry, but you only have [37m%d [35mdays in class at the present time, and you need to
+keep at least one day for yourself.
+} T Can't transfer this many days message
+
+ This message informs the user that his class doesn't use
+ days in class, so he cannot transfer days to another user.
+
+NOUSEDAY {[0m
+[1;35mSorry, but the [33m%s [35mclass doesn't use days in class.
+} T User doesn't use days in class message
+
+ This message informs the user that the person he is trying
+ to transfer days in class to does not have the same class
+ as our user does.
+
+DIFFCLS {[0m
+[1;35mSorry, but you can only transfer days in class to users in the same class as
+yours, and [33m%s [35mis currently in the [37m%s [35mclass.
+} T Different class for transfer days message
+
+ This message informs the user that the days in class
+ transfer he wanted has been successfully completed.
+
+TDYMSG {[0m
+[1;36mOk, [37m%d [36mof your days in class have been transferred to [33m%s[36m.
+} T Transfer days in class done message
+
+ This message informs a user that someone has transferred
+ days in class to him.
+
+TDYINJ {[0m
+[1;33m%s [32mhas just transferred [37m%d [32mdays in class to you.
+} T Days in class transfer announcement
+
+ This is the post days in class help message.
+
+PDYHLP {[0m
+[1;36mThis command allows you to post days in class to a user. Between [37m%d [36mand
+[37m%d [36mdays may be posted at one time, and the command is called as follows:
+[33m%s <user-id> [number of days to post] (+)
+[36mThe optional [33m(+) [36minforms the user of the posting.
+} T Post days in class help message
+
+ This message informs the user that he has tried to post
+ either too high or too low a number of days in class.
+
+BADPDY {[0m
+[1;35mYou may only post between [37m%d [35mand [37m%d [35mmore days in class.
+} T Bad number in post days in class message
+
+ This message informs the user that he cannot post zero
+ days in class to someone.
+
+NOZEROD {[0m
+[1;35mSorry, but you can't post [37m0 [35mdays in class.
+} T Can't post zero days in class message
+
+ This message informs a user attempting to post days in
+ class that the postee's class does not use days in class.
+
+NOUSEDY {[0m
+[1m%s[35m's current class, [33m%s[35m, does not use days in class.
+} T Postee's class doesn't use days in class message
+
+ This message informs a user attempting to post days in
+ class that the other user already has unlimited days in
+ class.
+
+DYSUNLM {[0m
+[1;33m%s [35malready has [37mUNLIMITED [35mdays in class left.
+} T Unlimited days in class post message
+
+ This message informs the user that the user he was
+ attempting to post days in class to cannot have that
+ many.
+
+DYOFLW {[0m
+[1;33m%s [35mcan only have [37m%u [35mmore days in class added using this command.
+} T Too many days in class post message
+
+ This message informs the user that his posting of days in
+ class was successful.
+
+PDNMSG {[0m
+[1;36mOk, [33m%s [36mhas been given [37m%d [36mmore days in class.
+} T Message of successful post days in class to poster
+
+ This is the help message for the display other user
+ account information global command.
+
+UIHLP {[0m
+[1;36mThis command displays account information about another user, such as
+class, credits, and the date they last called the system. It is called as
+follows:
+[33m%s <user-id>
+} T Other user account information help message
+
+ This is the help message for the display current account
+ settings global command.
+
+CSTHLP {[0m
+[1;36mThis command displays your current account settings such as ANSI mode,
+editor type and time left on-line. It is called as follows:
+[33m%s
+} T Display current account settings help message
+
+ This is the display account settings output (1 of 5).
+
+CSTMSG1 {[0m
+        [1;34mAccount settings for [33m%s
+
+[36mScreen width  : [37m%d [36mCHARACTERS
+Screen length : [37m%s [36mLINES
+Invisibility  : [37m%s                  [36mBy Globals      : [37m%s
+[36mANSI mode     : [37m%s                  [36mEditor type     : [37m%s
+[36mOutput mode   : [37m%s           [36mChat channel    : [37m%s
+[36mEcho mode     : [37m%s                  [36mDuplex mode     : [37m%s [36mDUPLEX
+Computer type : [37m%s              [36mLog-on Notices  : [37m%s
+[36m"Busy" flag   : [37m%s             [36mEditor pester   : [37m%s
+[36mPage setting  : [37m%s                  [36mTelegram notify : [37m%s
+[36mShow your age : [37m%s                  [36mWho's Online    : [37m%d
+[36mChat channel join/leave notices : [37m%s
+[36mLog-on message                  : [37m%s
+[36mLog-off message                 : [37m%s
+} T Current settings output message 1
+
+ This is the header output above listing people that the
+ user has blocked from paging and sending him telegrams.
+
+CSTHDR1 {[0;1;36mPage blocks                          Telegram blocks
+} T Users blocked from paging and sending telegrams header
+
+ This is the display account settings output (2 of 5).
+
+CSTMSG2 {[0;1m%d[36m: [33m%-34.30s[37m%d[36m: [33m%s
+} T Current settings output message 2
+
+ This is the header output above listing the user's macros
+ and macro command strings.
+
+CSTHDR2 {[0;1;36mMacro command       Macro
+} T Users blocked from paging and sending telegrams header
+
+ This is the display account settings output (3 of 5).
+
+CSTMSG3 {[0;1m%d[36m: [33m%-17s%s
+} T Current settings output message 3
+
+ This is the display account settings output (4 of 5)
+
+CSTMSG4 {[0;1;36mBusy Notify User-ID  : [33m%s
+[36mLog On Friend Notice : [33m%s
+[36mLog Off Friend Notice: [33m%s
+} T Current settings output message 4
+
+ This message is displayed for online users who have no
+ alarm set.
+
+CSTNALRM {[0;1;36mNo alarm set at this time
+} T No alarm time set message
+
+ This is the display account settings output (5 of 5)
+
+CSTMSG5 {[0;1;36mAlarm date: [33m%s          [36mAlarm time: [33m%s
+} T Current settings output message 5
+
+ This is the help message for the switch user class global
+ command.
+
+SWCHLP {[0m
+[1;36mThis command allows you to globally switch a user's class to any of the
+classes you have available, and is called as follows:
+[33m%s <user-id> [class] [days in class] (+)
+[36mNote that [33m[days in class] [36mis completely optional, and a default will be given
+if you don't include this option and the new class uses days in class. You can
+switch a class from [33m1 [36mto [33m%d [36mdays.
+The [33m(+) [36mis also optional, and informs the user who has switched his class.
+} T Switch user class help message
+
+ This message informs the user that he is trying to switch
+ class for an invalid number of days; in other words, less
+ than 1 or greater than 999.
+
+BADDYNM {[0m
+[1;35mYou are trying to switch a user's class for a certain number of days, but you
+have entered an invalid number of days to switch class for. You can switch a
+user's class for between [33m1 [35mand [33m%d [35mdays.
+} T Trying to switch class for bogus days message
+
+ This message confirms to the user that the desired switch
+ user class command was successful.
+
+SWCDUN {[0m
+[1;36mOk, [33m%s[36m's class has been changed to "[37m%s"[36m for [37m%s [36mdays.
+} T Switch class command successful message
+
+ This message informs the user that the class switch he
+ desired is different from what was requested.
+
+SWCDIFF {[0m
+[1;33m%s[36m's class has been changed to [37m%s[36m for [37m%s[36m days. This may be because you are trying to
+change a "MONTHLY" user with credits to "DEMO" class, for example.
+} T Switch to class different than request message
+
+ This message informs the user that the class he is
+ attempting to switch someone to is not valid.
+
+BDCLNM {[0m
+[1;33m%s [35mis not a valid class name.
+} T Bad class name in switch user class message
+
+ This message explains to the user that the switch in user
+ class he requested could not take place.
+
+CLSNTCH {[0m
+[1;33m%s[35m's class has not been changed, and is still [37m%s[35m. This could be because he or
+she has no credits, but was switched to a class requiring credits. You may be
+able to do the switch globally by just posting credits.
+} T Switch class did not occur message
+
+ This is the help message for the give/take user key global
+ command.
+
+UKHLP {[0m
+[1;36mThis command gives a key to a user if he doesn't already have it. If he does
+have the key this command will remove it from the user. It is used as
+follows:
+[33m%s <user-id> ?     to list this user's current keys
+%s <user-id> [key] (+)  to give/take a key
+[36mNote that you can remove keys in a user's class with this command. The keys
+will still show up when you list the user's class keys, but the keys will also
+show up as being negative keys. This means the user technically has the key in
+his class keyring, but he won't be able to use the key, so effectively it
+removes the key from the user. Please be aware that it is probably not a good
+idea to remove keys like NORMAL from a user this way, and that you should only
+take away special keys from a user's class.
+The[33m (+) [36mis optional and informs the user that the key was given or taken.
+} T Give or take user key help message
+
+ This message informs the user that the key he wishes to
+ give or take cannot be valid.
+
+UKNBAD {[0m
+[1;35mYou need to add a key to give or take, or a [33m? [35mto list the user's current
+keys. [37m%s [35mis not [33m? [35mand is not a valid key name.
+} T Invalid key name given message
+
+ This message lists a requested user's current keys in his
+ class keyring.
+
+CLKMSG {[0m
+[1;33m%s [36mhas the following keys from the [37m%s [36mclass:
+[37m%s
+} T List user's class keys message
+
+ This message lists a requested user's current keys not
+ within his class keyring.
+
+SKYMSG {[0;36mand has the following special keys:
+[1;37m%s
+} T List user's special keys message
+
+ This is the header for displaying negative keys that a
+ user has.
+
+NOTKHDR {[0;1;34mminus these negative keys:
+} T List user's negative keys message
+
+ This is the output for listing each negative key a user
+ has in the list of negative keys.
+
+NOTKEY {[0;1m%s} T Output for each negative key a user has
+
+ This message tells the user that he successfully gave the
+ desired key to someone.
+
+UKADD {[0m
+[1;36mOk, you have given [33m%s [36mthe [37m%s [36mkey.
+} T Key given successfully message
+
+ This message tells the user that he successfully removed
+ the desired key from someone.
+
+UKRMV {[0m
+[1;36mOk, you have taken the [37m%s [36mkey from [33m%s[36m.
+} T Key removed successfully message
+
+ This message informs the user that the person he is
+ attempting to give or take a key from already has the
+ MASTER key.
+
+UKSYS {[0m
+[1;33m%s [31mhas the [37mMASTER [31mkey, which automatically gives them every key.
+} T User has MASTER key message
+
+ This message informs the user that the handle he has
+ specified has no global account data, and so cannot
+ be set invisible using the global invisibility toggle
+ command. This is probably because the given user-id
+ has not logged on since the globals were installed.
+
+NODATA {[0m
+[1;35mSorry, but [33m%s [35mcurrently has no global account data. This means that this
+account has not logged on since Globals were installed, and the
+Globals must have a user account record to set a user invisible.
+} T No global user account data message
+
+ This is the help message for the invisibility toggle
+ global command.
+
+INVHLP {[0m
+[1;36mThis command allows you to turn yourself "invisible" to other users on the
+system. Normal users will not be able to tell that you are on-line. The command
+is a toggle and is used as follows:
+[33m%s                 Toggles your invisibility on/off
+[36mYour current setting is [37m%s
+[1;36mYou can also toggle another user invisible. The invisibility lasts
+until you use this command to toggle them uninvisible. The command is used
+as follows:
+[33m%s <user-id> (+)   Toggles <user-id> invisible/uninvisible
+[36mThe optional [33m(+) [36minforms the user who has toggled his invisibility.
+} T Invisibility toggle help message
+
+ This message informs the user of whether or not he is
+ visible to other users.
+
+INVTOG {[0m
+[1;36mOk, you just turned invisibility [37m%s[36m.
+} T Invisibility toggle output to user message
+
+ This message informs the user of the invisibility status
+ of the person he toggled invisibility on.
+
+INVOTOG {[0m
+[1;36mOk, you have just toggled invisibility [37m%s [36mfor [33m%s[36m.
+} T Toggle other user invisible output to user message
+
+ This message informs the user that the person whose
+ invisibility he is trying to toggle is a MASTER key
+ holder, while the user is not.
+
+NOTOG {[0m
+[1;35mSorry, but you can't toggle invisibility for [33m%s[35m.
+} T Can't toggle MASTER key holder message
+
+ This message confirms to the user that the user-id he
+ booted and suspended has been taken care of.
+
+BNSDUN {[0m
+[1;34mOk, [33m%s [34mhas been ejected from the system and is [37mSUSPENDED[34m.
+} T User booted from system and suspended message
+
+ This message confirms to the user that the user-id he
+ booted from the system is gone.
+
+BTDUN {[0m
+[1;34mOk, [33m%s [34mhas been ejected from the system.
+} T User booted from system message
+
+ This is the help message for the suspend user with
+ automatic unsuspend global command.
+
+ASUSHLP {[0m
+[1;36mThis command suspends a user for a number of days that you select. You can
+suspend a user for [37m1 [36mto [37m%d [36mdays using this command. It automatically
+unsuspends the user after the days are up, and it boots him from the system
+if the user is on-line. It is used as follows:
+[33m%s <user-id> # (+)     To automatically unsuspend after # days
+[36mThe optional (+) informs an online user who has been suspended
+who suspended him.
+You can also see who is currently suspended and set to be automatically
+unsuspended, as well as the date they will be unsuspended. This is done
+as follows:
+[33m%s ?                   To see suspended users and their unsuspend date
+[36mIf a user who is already suspended is suspended using this command, the new
+days you enter for him to be suspended for is what will be used.
+You can unsuspend a user who has been suspended with this command by using the
+suspend user toggle command. This is done as follows:
+[33m%s <user-id>           To unsuspend a user before unsuspend date
+} T Suspend user with automatic unsuspend help message
+
+ This is the help message for the suspend/unsuspend user
+ global command.
+
+SUSHLP {[0m
+[1;36mThis command suspends a user if he is not already suspended, otherwise it
+unsuspends him. It automatically boots the user from the system. It is used
+as follows:
+[33m%s <user-id> (+)       To simply suspend/unsuspend <user-id>
+[36mThe optional (+) informs an online user who has suspended him.
+} T Suspend/unsuspend user help message
+
+ This is the header for displaying users who are suspended
+ and will be automatically unsuspended, as well as the date
+ they will be unsuspended.
+
+ASUSHDR {[0m
+
+[1;34mSuspended users who will be automatically unsuspended
+
+[33mUser-ID                            [37mDate unsuspended
+[32m----------------------------------------------------
+} T Header for output of suspended users
+
+ This is the output for displaying users that are suspended
+ and who will be unsuspended, along with the date they will
+ be unsuspended.
+
+SUSGUY {[0;1;33m%-35.29s[37m%s
+} T Users suspended with automatic unsuspend date
+
+ This message informs the user that no one is currently
+ suspended who is set to be automatically unsuspended.
+
+NONESUS {[0;1;35m<<[0;35mNobody[1m>>
+} T No one is suspended with automatic unsuspend
+
+ This message informs the user that the person he is trying
+ to suspend is a Sysop and cannot be suspended.
+
+NOSUS {[0m
+[1;35mSorry, but [33m%s [35mis a Sysop and cannot be suspended.
+} T Can't suspend a Sysop message
+
+ This message informs the user that the person he suspended
+ has indeed been suspended.
+
+SUSDN {[0m
+[1;34mOk, [33m%s [34mis now [37mSUSPENDED[34m.
+} T User suspended message
+
+ This message informs the user that the person he
+ unsuspended is now unsuspended.
+
+UNSUS {[0m
+[1;34mOk, [33m%s [34mis now [37mUNSUSPENDED[34m.
+} T User unsuspended message
+
+ This is the help message for the delete/undelete user
+ global command.
+
+DLUHLP {[0m
+[1;36mThis command deletes a user if he is not deleted, otherwise it undeletes
+him. It automatically boots the user from the system. Sysops may not be
+deleted. It is used as follows:
+[33m%s <user-id> (+)
+[36mThe optional (+) informs the user who has deleted him.
+} T Delete/undelete user help message
+
+ This message informs the user that the person he is trying
+ to delete is a Sysop and cannot be deleted.
+
+NODLU {[0m
+[1;35mSorry, but [33m%s [35mis a Sysop and cannot be deleted.
+} T Can't delete a Sysop message
+
+ This message informs the user that the person he is trying
+ to delete has a protected account and cannot be deleted.
+
+NODLA {[0m
+[1;35mSorry, but [33m%s [35mhas a protected account which cannot be deleted.
+} T Can't delete a protected account message
+
+ This message is displayed to a user who has been ejected
+ from the system and deleted.
+
+BTNDLU {[0m
+
+[1;33m%s [31mhas just booted you and deleted your account...goodbye
+
+} T Boot and delete user goodbye message
+
+ This message confirms to the user that the user-id he
+ booted and deleted has been taken care of.
+
+BNDDUN {[0m
+[1;34mOk, [33m%s [34mhas been ejected from the system and is [37mDELETED[34m.
+} T User booted from system and deleted message
+
+ This message informs the user that the person he deleted
+ has indeed been deleted.
+
+DLUDN {[0m
+[1;34mOk, [33m%s [34mis now [37mDELETED[34m.
+} T User deleted message
+
+ This message informs the user that the person he
+ undeleted is now undeleted.
+
+UNDLU {[0m
+[1;34mOk, [33m%s [34mis now [37mUNDELETED[34m.
+} T User undeleted message
+
+ This is the help message for the get other user's settings
+ global command.
+
+OUSHLP {[0m
+[1;36mThis global command shows you the current settings of things like ANSI mode
+and screen width on the user-id you specify. The user-id you specify must
+be on-line. It is used as follows:
+[33m%s <user-id>
+} T Get another user's current settings help message
+
+ This message informs the user how to use the get other
+ user's current settings global command.
+
+OUSUSG {[0m
+[1;32mThis global command shows you information about the settings another user
+currently has, including ANSI mode and screen width. The user-id you specify
+must be on-line. It is used as follows:
+[33m%s <user-id>
+} T Get another user's current settings usage message
+
+ This message informs the user that the User-ID whose
+ current settings information he is requested has no 
+ Globals data at the present time.
+
+NOUSRDAT {[0m
+[1;33m%s [35mhas no Globals data at this time.
+} T No such user on-line to get settings for message
+
+ This header is displayed to each user logging on, to tell
+ them what to type for help on the global commands.
+
+EZSHLP {[0m
+[1mGlobals %s
+[36mCopyright (C) 2024 Elwynor Technologies. All rights reserved.
+Type [33m%s [36mfor help on global commands
+} T Globals log-on message
+
+ This is the help message for the paging global commands.
+
+PGHLP {[0m
+[1;36mThis command allows you to page other users. You can send them pages with
+a message. You can turn your page setting to on, off or ok, which corresponds
+to "bombard me with pages", "don't bug me at all", and "only page me every
+two minutes". You can also block other users from sending you pages. Up to
+5 users can be blocked from sending you pages at one time. The users you block
+stay blocked until you remove them from your blocked list. The block user
+command is a toggle, so if the user is not already blocked he becomes blocked
+from paging you, and if he is blocked he will no longer be blocked. You cannot
+block a Sysop from paging you, however. You can also re-send the last page
+you entered if it does not go through the first time. The page commands are
+used as follows:
+[33m%s <user-id> [message]     pages the user with the message
+%s on/off/ok               sets your page setting
+%s ?                       displays your page setting
+%s                        re-sends last page
+%s <user-id>              blocks or unblocks a user
+%s ?                      lists users blocked from paging you
+} T Page help message
+
+ This message informs the user of the correct usage of the
+ page block command.
+
+PFUSG {[0m
+[1;32mThis command blocks or unblocks another user from paging you. If the user-id
+you specify is not blocked, his pages will be blocked, and if he is already
+blocked from paging you, his pages will be allowed. The command is used as
+follows:
+[33m%s <user-id> - blocks or unblocks pages from <user-id>
+%s ?         - shows who is currently blocked from paging you
+} T Page block usage message
+
+ This is the actual page as sent to a user.
+
+PGOUT {[0m
+[1;33m%s [32mis paging you from [36m%s[32m:
+[37m%s
+} T Page output message
+
+ This is a blank page message as sent to a user.
+
+BLNKOUT {[0m
+[1;33m%s [32mis paging you from [36m%s[32m!
+} T Blank page output message
+
+ This message is shown to a user who is attempting to page
+ someone whose pages are turned off.
+
+PGOFF {[0m
+[1;33m%s[35m's pages are currently turned [37mOFF[35m.
+} T Pages turned off message
+
+ This message is shown to a user who is attempting to page
+ someone who has already been paged in the last two minutes
+ and whose page setting is "ok".
+
+PAGED {[0m
+[1;33m%s [35mhas already been paged within the last two minutes.
+} T User already paged message
+
+ This message is displayed to a user who is attempting to
+ page someone who has blocked their pages.
+
+INGPGE {[0m
+[1;35mSorry, but [33m%s [35mhas blocked your pages.
+} T Pages blocked message
+
+ This message is displayed to the user upon successfully
+ paging someone.
+
+PGSNT {[0m
+[1;32mPaging [33m%s[32m...
+} T Page sent message
+
+ This message is displayed to the user when his page could
+ not be sent, so a telegram was sent instead.
+
+CNTPGE {[0m
+[1;33m%s [35mcould not be paged at this time. Your page message was sent as
+a telegram.
+} T Telegram sent instead of page message
+
+ This message is displayed to the user when his page could
+ not be sent, and he merely paged another user without a
+ message, leaving nothing to send in a telegram.
+
+CNTPGENT {[0m
+[1;33m%s [35mcould not be paged at this time. Since you did not include a message with
+your page, no telegram has been sent. Please try again later.
+} T Can't page and no telegram sent message
+
+ This message is displayed to a user who tries to sent a
+ page to someone not on-line.
+
+NODUDE {[0m
+[1;33m%s [35mis not currently on-line.
+} T Page receiver not on-line message
+
+ This message is displayed to a user who has just set his
+ page setting to "on".
+
+PGONMSG {[0m
+[1;36mOk, your page setting mode has been set to [37mON[36m.
+} T Page setting set to on message
+
+ This message is displayed to a user who has just set his
+ page setting to "ok".
+
+PGOKMSG {[0m
+[1;36mOk, your page setting mode has been set to [37mOK[36m.
+} T Page setting set to ok message
+
+ This message is displayed to a user who has just set his
+ page setting to "off".
+
+PGOFFMSG {[0m
+[1;36mOk, your page setting mode has been set to [37mOFF[36m.
+} T Page setting set to off message
+
+ This message informs the user of his current page setting.
+
+PAGSET {[0m
+[1;36mYour current page setting is [37m%s[36m.
+} T Page setting display message
+
+ This message informs a user trying to re-send his last
+ page that he has no previous page to send.
+
+NPPAG {[0m
+[1;35mYou have no previous page since you haven't paged yet during this session.
+} T No last page to send message
+
+ This message informs the user that pages from the user he
+ chose are no longer blocked.
+
+UNBLOCK {[0m
+[1;36mOk, you can now receive pages from [33m%s[36m.
+} T User pages no longer blocked message
+
+ This message is the output for a user listing users
+ blocked from paging him who has no one blocked.
+
+NUBLOCK {[0m
+[1;36mYou have no one blocked from paging you.
+} T No user blocked from paging message
+
+ This message is the output header for listing everyone
+ that the user has blocked pages from.
+
+NOBLOCK1 {[0m
+[1;36mYou have blocked pages from the following users:
+} T Pages blocked output header
+
+ This is the output for everyone that the user has blocked
+ from paging him.
+
+NOBLOCK2 {[0;1;33m%s
+} T Users blocked from paging output
+
+ This message informs the user that he cannot block pages
+ from a Sysop.
+
+NBKSYS {[0m
+[1;35mSorry, but you can't block pages from [33m%s[35m.
+} T Can't block a Sysop's pages message
+
+ This message tells the user that the person he blocked
+ pages from can no longer annoy him.
+
+UPGBLK {[0m
+[1;36mOk, [33m%s[36m's pages are now blocked.
+} T Pages blocked message
+
+ This message informs the user that he cannot block anyone
+ else's pages because he has blocked his limit already.
+
+CNTBLK {[0m
+[1;35mYou already have [37m%d [35musers blocked from paging you, which is the limit. To
+add another user to your page blocked list, you will need to unblock someone
+else first.
+} T Can't block more users message
+
+ This message is displayed to a user who asks for help on
+ a non-existant global command.
+
+NOHLP {[0m
+[1;35mSorry, but there is no help available on [33m%s[35m.
+} T Non-existant global command help message
+
+ This message tells the user that the user-id he entered to
+ page is too vague and needs to be more specific.
+
+MULTUSR {[0m
+[1;35m"[33m%s[35m" is a possible match for more than one user on-line. You need to be
+more specific. For example, you might have entered "[37m%s [35ms hey!" when the
+users "Sparky" and "Starlight" are on-line. Entering "[37m%s [35msp hey!" would
+allow your page to reach "Sparky".
+} T Vague user-id for page entered message
+
+ This message informs the user that he must wait a few
+ seconds to change chat channels.
+
+NOCHGYET {[0m
+[1;35mSorry, but you will need to wait a few seconds to change chat channels to
+avoid annoying other users.
+} T Can't change channels yet message
+
+ This message informs the user that all global chat channel
+ topics have been cleared.
+
+ALLCLRD {[0m
+[1;34mYou have just cleared all global chat channel topics.
+} T Chat channel topics cleared message
+
+ This message informs the user that the global chat channel
+ topic number he selected has been cleared.
+
+ONECLRD {[0m
+[1;34mYou have just cleared the topic for global chat channel [37m%d[34m.
+} T One chat channel topic cleared message
+
+ This message informs the user that the range of global
+ chat channel topics he selected has been cleared.
+
+RNGCLRD {[0m
+[1;34mYou have just cleared all global chat channel topics in the range of channel
+[37m%d [34mto channel [37m%d[34m.
+} T Range of chat channel topics cleared message
+
+ This message informs the user of the correct usage of the
+ clear global chat channel topics command (1 of 2).
+
+CLRNUM1 {[0m
+[1;35mYou have entered invalid global chat channel numbers for clearing. Here is
+the correct usage of this command:
+[33m%s %s #     Clears channel # where # is in range of [37m1 [33mto [37m%d
+} T Clear chat channel command usage message (1 of 2)
+
+ This message informs the user of the correct usage of the
+ clear global chat channel topics command (2 of 2).
+
+CLRNUM2 {[0;1;33m%s %s # #    Clears channel range from # to # where # is in range of [37m1 [33mto [37m%d
+} T Clear chat channel command usage message (2 of 2)
+
+ This message is entered into a telegram which tells a user
+ that someone has posted credits to him. Note: Do NOT make
+ this notice more than 255 characters in length or color
+ it.
+
+PSTNOTE {I have just posted %s credits to your account} T Post notice
+
+ This message informs a user that someone has posted
+ credits to him.
+
+PSTINJ {[0m
+[1;33m%s [32mhas just posted [37m%s [32mcredits to you.
+} T Credit posting announcement
+
+ This message is entered into a telegram which tells a user
+ that someone has transferred credits to him. Note: Do NOT
+ make this notice more than 255 characters in length or
+ color it.
+
+TRNNOTE {I have just transferred %s credits to your account} T Transfer notice
+
+ This message is entered into a telegram which tells a user
+ that someone has transferred days in class to him. Note: Do
+ NOT make this notice more than 255 characters in length or
+ color it.
+
+TDYNOTE {I have just transferred %d days in class to your account} T Transfer notice
+
+ This message informs a user that someone has transferred
+ credits to him.
+
+TRNINJ {[0m
+[1;33m%s [32mhas just transfered [37m%s [32mcredits to you.
+} T Credit transfer announcement
+
+ This message is entered into a telegram which tells a user
+ that someone has posted days to his account. Note: Do NOT
+ make this notice more than 255 characters in length or
+ color it.
+
+PDYNOTE {I have just posted %d days in class to you} T Post days notice
+
+ This message informs a user that someone has posted days
+ in class to him.
+
+PDYINJ {[0m
+[1;33m%s [32mhas just posted [37m%d [32mdays in class to you.
+} T Days in class post announcement
+
+ This message informs a user that someone has extended his
+ time for the current call.
+
+CALLINJ {[0m
+[1;33m%s [34mhas just %s your current call time by [37m%d [34mminutes.
+} T Call time extended announcement
+
+ This message informs a user that someone has extended his
+ time for the day.
+
+DAYINJ {[0m
+[1;33m%s [34mhas just %s your time on today by [37m%d [34mminutes.
+} T Day time extended announcement
+
+ This message is entered into a telegram which tells a user
+ that someone has extended his time on-line. Note: Do NOT
+ make this notice more than 255 characters in length or
+ color it.
+
+TEXTNOTE {I have %s your time this call by %d minutes, and your time today
+by %d minutes} T Time extended notice
+
+ This message is entered into a telegram which tells a user
+ that someone has given a key to him. Note: Do NOT make
+ this notice more than 255 characters in length or color it.
+
+GKYNOTE {I have just given you the %s key} T Give key notice
+
+ This message informs the user that someone has just given
+ him a key.
+
+GKYINJ {[0m
+[1;33m%s [32mhas just given you the [37m%s [32mkey.
+} T Key given announcement
+
+ This message is entered into a telegram which tells a user
+ that someone has removed a key from him. Note: Do NOT make
+ this notice more than 255 characters in length or color
+ it.
+
+RKYNOTE {I have just away taken your %s key} T Remove key notice
+
+ This message informs the user that someone has just
+ removed a key from him.
+
+RKYINJ {[0m
+[1;33m%s [32mhas just taken away your [37m%s [32mkey.
+} T Key taken announcement
+
+ This message is entered into a telegram which tells a user
+ that his invisibility status has been toggled. Note: Do
+ NOT make this notice more than 255 characters in length or
+ color it.
+
+INVNOTE {I have just altered your account so you are %s invisible} T Toggle invisibility notice
+
+ This message informs the user that his invisible status
+ has been toggled.
+
+INVINJ {[0m
+[1;33m%s [32mhas just altered your account so you are [37m%s [32minvisible to other users.
+} T Invisible toggle announcement
+
+ This message is entered into a telegram which tells a user
+ that his class has been changed. Note: Do NOT make this
+ notice more than 255 characters in length or color it.
+
+CLSNOTE {I have just changed your class to %s for %s days} T Class change notice
+
+ This message informs the user that someone has just
+ switched his class.
+
+CLSINJ {[0m
+[1;33m%s [32mhas just changed your class to [37m%s[32m for[37m %s[32m days.
+} T Class switch announcement
+
+ This message informs the user of the new setting that his
+ notification of telegrams has been set to.
+
+NTTMSET {[0m
+[1;34mYou have just toggled your telegram notification setting to [37m%s[34m.
+} T Telegram notification toggle setting changed message
+
+ This message informs the user of the setting of his
+ telegram notification toggle.
+
+TMNTSET {[0m
+[1;34mYour current telegram notification setting is [37m%s[34m.
+} T Telegram notification toggle setting message
+
+ This message explains the usage of the global command
+ to delete all telegrams for the user from a desired
+ person.
+
+TCLUSG {[0m
+[1;32mThis command will delete all telegrams that you have from the desired person,
+and is used as follows:
+[33m%s <user-id>
+} T Usage of delete telegrams message
+
+ This message informs the user that all telegrams from the
+ person specified have been deleted, and tells how many
+ were deleted.
+
+TELDELT {[0m
+[1;34mOk, [37m%s [34mtelegram(s) from [33m%s [34mhave been deleted.
+} T Telegrams deleted confirmation message
+
+ This message informs the user that he had no telegrams
+ from the person specified to deleted all telegrams from.
+
+NOTEL {[0m
+[1;35mYou have no telegrams from [33m%s [35mto delete.
+} T No telegrams to delete message
+
+ This message informs the user that telegrams from a Sysop
+ cannot be deleted.
+
+NODELSYS {[0m
+[1;35mSorry, but you cannot delete telegrams from [33m%s[35m.
+} T Message telling user he can't delete the Sysop's message
+
+ This message informs the user that the User-ID he has
+ specified is not valid.
+
+NOSCHGUY {[0m
+[1;35mSorry, but there is no [33m%s [35mon this system.
+} T No such user here
+
+ This message informs the user that telegrams from the
+ person specified have been deleted from the database,
+ and how many were deleted.
+
+TDADELT {[0m
+[1;34mOk, [37m%s [34mtelegrams from [33m%s [34mhave been deleted.
+} T All telegrams in database deleted confirmation message
+
+ This message informs the user that the person specified
+ had sent no telegrams to delete.
+
+NOTDA {[0m
+[1;33m%s [34mhas sent no telegrams, so none have been deleted.
+} T No telegrams deleted from database message
+
+ This message informs the user of the correct usage of the
+ delete all telegrams from a person from the telegram
+ database global command.
+
+TDAUSG {[0m
+[1;32mThis command allows you to delete all telegrams in the telegram database that
+the specified person has sent. It is used as follows:
+[33m%s <user-id>
+} T Delete all telegrams in database froma user usage message
+
+ This message informs the user that he has entered a number
+ of days after which to automatically unsuspend another user
+ that is too high.
+
+DYS2BIG {[0m
+[1;35mYou have entered an invalid number. You can only have someone automatically
+unsuspended at between [37m1 [35mand [37m%d [35mdays.
+} T Too high a number of days in automatic unsuspend
+
+ This message informs the user that the person he suspended
+ will be automatically unsuspended in the number of days he
+ requested.
+
+AUTOUNS {[0m
+[1;34mOk, [33m%s [34mis now suspended and will be automatically unsuspended after [37m%d [34mdays.
+} T Automatic unsuspend confirmation message
+
+ This message informs the user that the person he suspended
+ has been booted off the system and will be automatically
+ unsuspended in the number of days he requested.
+
+AUTOBNS {[0m
+[1;34mOk, [33m%s [34mhas been removed from the system and is now suspended and will be
+automatically unsuspended after [37m%d [34mdays.
+} T Boot and automatic unsuspend confirmation message
+
+ This message is displayed to a user who tries to add too
+ much input onto the repeat last command global command.
+
+TOOLONG {[0m
+[1;35mYou are trying to create too long a command string. Please reduce the length
+of the extra input you added and try again, or start with a smaller
+repeat command.
+} T Too much input added to last command message
+
+ This message displays the correct usage of the telegram
+ block global command.
+
+TBKUSG {[0m
+[1;32mThis command allows you to prevent other users you choose from sending you
+telegrams. It is a toggle, and is used as follows:
+[33m%s ?           Display users blocked from sending you telegrams
+%s <user-id>   Block/unblock <user-id> from sending you telegrams
+} T Telegram block usage message
+
+ This is the header for listing users blocked from sending
+ the current user telegrams.
+
+TBKHDR {[0m
+[1;34mUsers blocked from sending you telegrams:
+} T Telegram block output header
+
+ This is the output of each user-id that is blocked from
+ sending the current user telegrams when the current user
+ requests that currently blocked users be listed.
+
+USRBLK {[0;1;33m%s
+} T Users blocked from sending telegrams output
+
+ This message informs the user that he cannot block a Sysop
+ from sending him telegrams.
+
+NOBLKSYS {[0m
+[1;35mSorry, but you cannot block telegrams from [37m%s[35m.
+} T No block Sysop's telegrams message
+
+ This message informs the user that the person he specified
+ is no longer blocked from sending him telegrams.
+
+UNBLCK {[0m
+[1;34mOk, [33m%s [34mcan now send you telegrams.
+} T User no longer blocked message
+
+ This message informs the user that the person he specified
+ is now blocked from sending him telegrams.
+
+BLCK {[0m
+[1;34mOk, [33m%s [34mcan no longer send you telegrams.
+} T User cannot send telegrams message
+
+ This message informs the user that he already has five
+ people blocked from sending him telegrams, and so the
+ person he wished to block could not be blocked.
+
+CNBLCK {[0m
+[1;35mYou already have five users blocked from sending you telegrams. You can only
+block five users, so if you want to block [33m%s[35m's telegrams you will have to
+unblock someone else.
+} T Could not block this user's telegrams message
+
+ This message informs the user that the person he is trying
+ to send a telegram to has blocked his telegrams.
+
+TMBLOCK {[0m
+[1;35mSorry, but [33m%s [35mhas blocked your telegrams.
+} T Telegrams are blocked message
+
+ This message informs the user that he currently has no one
+ blocked from sending him telegrams.
+
+NOBLCKS {[0m
+[1;34mNo one is currently blocked from sending you telegrams.
+} T No one blocked message
+
+ This message confirms to the user that the person he
+ wished to force to re-log is being re-logged.
+
+RLGING {[0m
+[1;34mOk, [33m%s [34mis now being re-logged.
+} T Re-log other user confirmation message
+
+ This message informs a user that he is being re-logged by
+ someone else, and indicates who has re-logged him.
+
+RLGED {[0m
+[1;31mSorry, but you are now being re-logged on by [33m%s[31m.
+} T User forced to re-log message
+
+ This message is displayed to a user who is invisible, and
+ who is attempting to page someone, send or reply to a
+ telegram, or send output on chat channels.
+
+URINVIS {[0m
+[1;35mSorry, you can't execute that command while you're "Invisible".
+} T User is invisible and can't do action message
+
+ This message informs the user that the person he has
+ posted negative days in class to does not have that many
+ days in class remaining, and to please try another with a
+ different number of days.
+
+NONEGZ {[0m
+[1;35mYou cannot set a user's days in class remaining to a negative number or to
+zero. [33m%s [35mcurrently has [37m%u [35mdays in class, so if you wish to reduce this,
+please try again with another number.
+} T Can't set days in class negative or to 0 message
+
+ This is the help message for the alarm global command.
+
+ALRMHLP {[0m
+[1;32mThis command allows you to be alerted at a time you select, and you can think
+of it as being like an alarm clock. This is handy for being alerted when you
+need to leave or for certain events in games or other on-line activities.
+To set a time to be alerted, you just enter the command followed by the time
+you would like in 24 hour format, where 1:00:00 is 1 AM, and 13:00:00 is
+1 PM, as follows:
+[33m%s <HH:MM:SS>
+[32mIf you should change your mind and decide you don't want to be alerted, you
+can just enter the command to clear your alarm, as follows:
+[33m%s
+[32mTo view the alarm time you have selected, you enter the following command:
+[33m%s ?
+[32mThe alarm time will only be good for as long as you are on-line, so if you
+log off before your alarm, it will not alert you if you come back on-line.
+Also, you can set a time for the next day. For example, if it is currently
+23:30:00 and you want to be alerted at 2:00:00 the next day, this will work
+provided you are on-line at the alarm time.
+Note that if you are "Busy" when your alarm is to alert you, you will be
+alerted as soon as you are no longer "Busy".
+} T Help message for alarm global command
+
+ This message informs a user attempting to clear his alarm
+ setting that he has no alarm to clear.
+
+NOALRM {[0m
+[1;35mSorry, but you currently have no alarm set to clear.
+} T No alarm set message
+
+ This message informs a user that his alarm setting has
+ been cleared.
+
+ALRMCLR {[0m
+[1;32mOk, you will no longer be alerted at [33m%s[32m.
+} T Alarm cleared message
+
+ This message informs the user that the alarm he requested
+ has been set.
+
+ALRMSET {[0m
+[1;32mOk, you will be alerted at [33m%s[32m.
+} T Alarm set message
+
+ This message informs the user of the correct usage of the
+ alarm command.
+
+ALRMUSG {[0m
+[1;35mYou have entered an invalid time to be alerted. You must enter the time you
+wish to be alerted in the following format:
+[33m%s <HH:MM:SS>
+[35mwhere HH is the hour, MM is the minute, and SS is the second. For example,
+to be alerted at 8 AM, you would enter
+[33m%s 8:00:00
+[35mThe time is in 24 hour format, so 1 AM is 1:00:00, and 1 PM is 13:00:00
+} T Alarm command usage
+
+ This message informs the user of his current alarm time
+ setting when he has a setting.
+
+ALRMTIM {[0m
+[1;32mYou have an alarm set for [33m%s[32m.
+} T Alarm time with alarm set message
+
+ This message informs the user of his current alarm time
+ setting when he has no setting.
+
+ALRMNTIM {[0m
+[1;32mYou have no current alarm set.
+} T Alarm time with no alarm set message
+
+ This is the alarm message users receive for the alarm
+ command.
+
+ALRM {[0m
+[1;5mATTENTION!!! [0;1;34mIt is now on or after [33m%s[34m...
+} T User alarm message
+

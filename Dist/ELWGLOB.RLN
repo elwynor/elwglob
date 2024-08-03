@@ -1,0 +1,880 @@
+                Globals Version 2.0 Release Notes
+                ---------------------------------
+        With version 2.0 you will find many new features, improvements
+        to existing features, and a few bug fixes. The bug fixes include
+        changing the ANSI toggle and screen length and screen width
+        commands so that they work immediately, which was not the case in
+        version 1.0. Another bug that has been fixed is that version 1.0
+        deleted only the first telegram to any user account deleted.
+        Now all telegrams to a deleted user are deleted. A bug in the post
+        credits command has been fixed as well. This bug would cause a GP
+        error if a user-id to post credits to was longer than 30 characters.
+        Finally, a bug which allowed Sysops to be suspended by using the
+        =zap <user-id> command with the /s switch has been fixed.
+
+        The help command (default =?) has been greatly cleaned up so that
+        the commands all fit into one screen. More detail has been added to
+        each global's help message, including what to enter to use the
+        global, so that the =? command screen size could be reduced.
+        The help command will only list those globals that the user has
+        access to. You do not need to edit the help messages at all
+        anymore if you change the default commands, because the module
+        keeps track of these changes for you and displays the correct
+        help. Help is also printed on the commands if you simply enter
+        the command with no other input. This does not work on the
+        toggle commands.
+
+        Enhancements to existing globals are numerous. First, the number of
+        global chat channels has been increased. The default is 5000 (as
+        opposed to 100 in Version 1.0) and the maximum is 10000 (as opposed
+        to 200 in Version 1.0). The handle of users who change or clear a
+        topic is listed in the audit trail along with the new topic,
+        if this option is turned on in the .MSG file. Note that
+        increasing the number of chat channels will NOT increase the
+        memory usage of your system, since memory for all 10000 channels
+        is allocated at start up whether you use the channels or not.
+        However, if all 10000 channels have a topic, it will add a few
+        seconds to the time it takes your system to come up, since all
+        the topics will have to be loaded from disk into memory.
+
+        The chat channels have been extensively re-coded to reduce the
+        number of times the disk is accessed, which improves performance
+        and reliability at the cost of memory. The command strings such as
+        "display" and "show" are now Sysop configurable. Global chat has
+        been modified so that users sending output on a channel can toggle
+        whether they have the output echoed back to them. A command to
+        allow Sysops to clear all chat channel topics, or a topic in a
+        channel they are not in, or a range of channel number topics has
+        been added.
+
+        The page console and all Sysops command has been enhanced by
+        allowing you to specify multiple console beeps. For each beep
+        you choose in the BPDUR option, the console will beep once per
+        second. You will have to be logged on to stop the beeps early,
+        however, since the command to stop console beeping early is
+        also a global command. More beeps slightly increase system
+        loading.
+
+        Telegrams have also been extensively re-coded for performance to
+        reduce disk accesses and increase speed. New features include
+        automatically deleting telegrams after they are read, the Sysop can
+        define what the command to read telegrams is (default is ==), and
+        the Sysop can define the character to use to send a telegram
+        (default is =). Users can also toggle the notices they get when
+        they receive telegrams on and off. Users can also delete telegrams
+        from desired people without having to read them. You can also
+        delete every telegram in the database sent by a user now as well.
+        Please be aware that deleting telegrams can take some time.
+        Finally, users can now block up to 5 people from sending them
+        telegrams.
+
+        All of the text blocks in the module have been moved to the .MSG
+        file for coloring or alteration by the Sysop. All of the options in
+        the .MSG file now have a message explaining their use.
+
+        All of the global commands are now individually keyed so that the
+        Sysop can set access for each global.
+
+        The Who's Online global has been changed so that the fields can be
+        colored in the .MSG file. This can be done in CNF Level 4 using
+        BBSDRAW. You do this by bringing up the screen you want to color
+        and then typing ALT-A to change your foreground (and background if
+        you wish) color to the desired choice. Then you position the cursor
+        over the output you wish to color. You then type ALT-B to use the
+        block command, then press the right arrow key until all of the text
+        you wish to color is highlighted, and then press ENTER. This text
+        will now be colored to your selection. How do you know what text is
+        the channel number, user-id, and so on so you know what output to
+        color? Well, let's look at an example:
+
+        %-5.3x%-17.16s%-15.14s
+        ^    ^^      ^^      ^
+         chan  userid  module
+
+        Let's say this is the first part of the regular Who's Online
+        output. There are three things here that will be displayed; the
+        user's channel number, the user-id, and where the user is. Each
+        thing that we display starts with '%' and ends with a letter; for
+        example 'x' and 's' above. So to color the channel number, you'd
+        select the color you prefer, and then use the block command to
+        highlight the text between the first '%' and the 'x' above. You
+        could then color the user-id by choosing the color and highlighting
+        the text between the second '%' and the first 's', and so on.
+        Invisible users are now hidden during the log-on and log-off period
+        so that their handle never shows.
+        A note to remember here: Please do NOT color the strings
+        (Logging on), (Logging off), and (New sign-up) in the .MSG file.
+        Instead, color the output strings for these (such as
+        %-5.3%-17.16s...). If you try to color these strings directly
+        your output will not work correctly.
+
+        A configurable limit has been placed on credit post amounts for
+        non-Sysops. Error checking has been added to the post amounts for
+        all users to prevent overflow or underflow (using too large or too
+        small numbers) from giving a bogus post amount.
+
+        You can optionally add new input to the repeat previous command
+        global to form a new command by combining the previous command
+        with the new input. For example, if your repeat previous command
+        string is =r, and your last input was /go, you could type =r top
+        and your new input would be /go top.
+
+        The re-log command now has an option for Sysops to force another
+        user to re-log. Please note that if you force a user who is in
+        the full screen editor to re-log he will instead be sent to
+        Never-Never land and forced to hang up and call again.
+
+        The module is now sensitive to invisible users, and will not let
+        users without the proper keys send pages, telegrams or send
+        output on global chat channels. Invisible users with the MASTER
+        key may do these things, but you cannot send pages to another
+        user who is invisible even if you have the MASTER key. Invisible
+        users with the key you specify may talk on global chat channels.
+        This was added mainly so that Sysops could chat on the Sysop
+        Chat Channel (the highest channel in use) while invisible.
+        Any user who can use the invisibility toggle can see other
+        invisible users in the Who's Online command, but may or may
+        not be able to page, send telegrams and chat on global chat
+        channels, depending on what you set these keys to.
+
+        Many commands now leave a record of themselves in the audit trail.
+        These commands include post credits, post days in class, suspend
+        user, delete user, transfer credits, switch class, give/take key,
+        force invisible, force re-log, eject user from system, page
+        console, and at your option changing or clearing chat channel
+        topics. If there are two users involved in the action, in a
+        credit transfer for example, then the lower line of the audit
+        trail report will say "Joe Blow by Sysop" if Joe Blow received
+        the credits that Sysop transferred.
+
+        Many commands which somehow alter a user's account, such as
+        post credits, also notify the person whose account they modify
+        about what has happened. The module first tries to print a short
+        message to the person, but if this cannot be done then the person
+        is sent a brief telegram. Commands which cause this to be done
+        are post credits, switch class, transfer credits, force other
+        user invisible, post days in class, give/take key, and eject user
+        from system. Some commands, such as delete user or suspend user,
+        send a message to the user if he is on-line, but do not leave a
+        telegram since the effects of these commands really are pretty
+        obvious. The key point from this is to keep in mind that users
+        are notified about what is happening, and to be aware of how
+        the module alerts them.
+
+        The list new users command has been modified so that all new
+        users for the given date are listed, rather than up to a maximum
+        number.
+
+        New features include a toggle for continuous or pause output. Also
+        new are macros, which include user-definable command strings. Each
+        user may define their own command strings (up to 4 characters) for
+        each macro. Each macro may be up to 39 characters. Each user may
+        have up to 10 macros. A system-wide broadcast global has been added,
+        allowing you to send a message to every on-line user. A transfer
+        credits command is now available for users to share some of their
+        credits with their friends. Sysops may now post days in class to
+        users globally. A command to display account information on other
+        users such as class, credits, and date of last call has been added.
+        A command to display current account settings such as ANSI mode,
+        editor type, and time left on-line today is now available. A
+        command to switch user classes has been added for your convenience.
+        Also new is a command to give and take user keys. An invisibility
+        toggle command has been added as well, with the option of setting
+        other users invisible if desired. A suspend/unsuspend user
+        toggle is a new addition. A new command adds the ability to
+        automatically unsuspend the user after a given number of days.
+        There is an option in the .MSG file, CHKUNS, which controls how
+        often the system checks for unsuspending users. If your BBS uses
+        the midnight cleanup routine, it is recommended that you set this
+        option to 0. If you don't use the cleanup routine, you can set it
+        as desired, although preferably not too low, and it will still be
+        able to automatically unsuspend users for you. The absolute lowest
+        number you should even consider using is 60, and this is far lower
+        than you should need. Also new is a command to delete/undelete
+        a user. This also toggles the user from tagged for deletion to
+        normal and back, and is handy if you should ever accidently delete
+        someone. A command to display the current account settings such as
+        ANSI mode and editor type is included for Sysop's convenience.
+        A command to display another user's current settings has been
+        included as well, so you can assist other users who have problems
+        or questions. Finally, a command to page other users has been
+        included. This differs from the standard /p <user-id> command in
+        two important ways. First, it includes a re-send last page command,
+        and second, it allows users to block up to 5 people from sending
+        them pages. This means that they don't have to turn pages completely
+        off to prevent someone from harassing them. Blocks can be toggled
+        on or off as desired. A duplex, or echo, mode toggle has been
+        added. Finally, a colorize input command is new for your use.
+
+        Note that the colorize input command may cut off parts of the
+        user's input if the user uses a huge macro from his terminal
+        package to send input or if he uses the add input onto a
+        global macro command or the global repeat command. The reason
+        for this is because user input is limited to a maximum of
+        255 characters (not including the terminating character), and
+        putting color into the input requires placing ANSI sequences
+        into the input, which will increase the size of the input. This
+        can mean that some of the user's input gets chopped off. Most
+        users should never see this unless they are creating some pretty
+        long input commands or using huge macros. Colorizing commands may
+        take up a lot of the input space, so please be aware of this.
+        It is not unusual to see 20+ characters added to your input string,
+        depending on the settings and the user's input. Use color with
+        some thought and care. You might notice that colorizing input
+        affects the display of some strings as well, appearing to change
+        the formatting of your output. This is because the characters are
+        actually in the string, but they are not printed and simply color
+        the text which is printed. This "fools" the formatting into
+        thinking that more input has been displayed than is actually the
+        case. Strings which depend on the strings before them being a
+        certain length can be affected by this. You can do two things to
+        avoid this; either re-format the output strings in question, or use
+        different input.
+
+        Please note that users who are suspended with automatic unsuspend
+        are not notified as to how many days they are suspended for. This
+        was done for two reasons; first, you might decide to change your
+        mind, so this way you won't feel that you are locked into the days
+        you chose, and second, you might want the user to call you to
+        discuss things. This is more likely to happen if the user does
+        not know that he will be automatically unsuspended in 3 days.
+
+        Please keep in mind two important things. The new upgrade will
+        definitely require more memory than the earlier version. The
+        module keeps as much data as possible in memory to increase speed
+        and performance and reduce disk accesses, and we strongly
+        recommend that you have 8 megabytes of RAM to run this module.
+        You may be able to squeak by on 4 or 5 megabytes. Also,
+        please update your documentation in EZEGLOBS.DOC if you change
+        the default command strings for the globals so users will know
+        what they can do and how to do it. Also, please READ this
+        document yourselves so you know how the global commands are
+        supposed to work. Detailed explanations of the commands are
+        put in this document for your benefit, and sometimes there is
+        information here that there was not room to place in the on-line
+        help. Command strings generally need to be one word in order for
+        the module to work correctly, so while you can change them to suit
+        your tastes please keep them at one word rather than multiple
+        words.
+
+        Many other subtle features designed to improve performance and
+        reliability have been included. We think you will find this module
+        to be a major upgrade from version 1.0, and the best global value
+        on the market.
+
+        As a final note, I would like to thank the beta-testing team for
+        their hard work, and for putting up with my constant upgrades
+        and for all their fine suggestions which have made this module
+        what it is. This package could not have been created without all
+        of your input....thanks guys! I want to especially thank James
+        Hamilton and the users of The X in Victoria, B.C. for going above
+        and beyond. Thanks also to Rich Viar and Oblivion BBS, and Mike
+        Russell and Kewl! BBS.
+
+        FILES IN THIS MODULE:
+        ---------------------
+        ELWGSUS.VIR     Virgin database file of suspended users who are
+                        set for automatic unsuspend
+        ELWGSUS.DAT     Data file of suspended users who are set for
+                        automatic unsuspend
+        ELWGLOBS.DOC    Listing of all global commands and their use
+        ELWGLOBS.MDF    Module definition file
+        ELWGLOBS.MSG    CNF options in text file form
+        ELWGLOBS.DLL    The module itself as run by BBS
+        ELWGLOBS.RLN    This file! Information about module
+        ELWGCHAT.VIR    Virgin database file of global chat channel
+                        topics
+        ELWGCHAT.DAT    Data file of global chat channel topics
+        ELWGRAM.VIR     Virgin database file of telegrams
+        ELWGRAM.DAT     Data file of telegrams
+        ELWUSER.VIR     Virgin database of each user's global information
+        ELWUSER.DAT     Data file of each user's global information
+        FILE_ID.DIZ     Description of module for library keyword listing
+        REGISTER.ME     Information for obtaining an activation code
+
+                Globals 3.0 Release Notes
+                -------------------------
+        This release changes our method of doing access codes. Access
+        codes are now tied to the registration number of the BBS.
+        This release also enhances some existing features. Global chat
+        channels have been slightly modified to make it easier for users
+        to know who is on their channel. Everyone on your channel is
+        listed whenever you use the =cc ? command, and you are notified
+        when users select your channel number. The display when the user
+        requests help (types =?) has been cleaned up a bit too.
+
+        A few minor bugs were fixed, and one major but obscure bug has
+        been fixed as well. The minor bugs include bogus screen length
+        and width settings being displayed when a user requests help
+        on the set screen length and set screen width global commands,
+        and in a very early release of 2.0 it was possible for macro
+        with input to have the input repeated multiple times, as well
+        as for users without the invisibility toggle key to be able
+        to toggle other users invisible. A major but obscure bug which
+        has been fixed is that if a user is being emulated and uses the
+        =zap boot user global command to boot the emulating user, the
+        system will GP.
+
+        The invisibility toggle for other users has been made permanent,
+        as opposed to lasting only until the user logged off in version
+        2.0. A display for the user's current invisibility setting has
+        been added to the current user settings (=cs) and other user
+        settings (=us) commands. The By Globals display setting tells
+        you whether invisibility was set by Globals. This is
+        helpful when you aren't sure whether you used the global =in
+        toggle or the /invis command that comes standard with the BBS.
+        Also a new option, SHWMINV, has been added which allows you to
+        control whether or not users with the key to toggle invisibility,
+        INVKEY, can see MASTER key holders who are invisible. Basically
+        this controls whether your staff can see you when you are invisible
+        or not. In version 2.0 users with INVKEY could see invisible MASTER
+        key holders. The default is yes, but you now have the option to
+        control this setting.
+
+        The Who's Online user lister has added an option to automatically
+        show users on the system at log on. The flag strings from the
+        Flags entry have been added to the .MSG file so you can edit them
+        as well. It is important to keep in mind that you should NOT color
+        these flags, which are options FLAG1, FLAG2, ... FLAG5. Color only
+        the output string for the flags which appears in option REGON3.
+        If you color these flags your output WILL be messed up, and you
+        will call up saying the Globals has a bug, and we will tell you
+        to RTFM. (RTFM stands for Read The, Uh, Friendly Manual).
+        We have also added an option which allows you to display the
+        user's current page name instead of "Menuing System" in the
+        Who's Online display. Another new option is the ability to
+        choose from a selection of Who's Online displays for the users
+        to see. This gives you the ability to not show ages and genders
+        and to show the City and State each user is calling from.
+        Option WHOSON controls which one is used, and the number x you
+        select corresponds to TOPICx and to REGONx in the output.
+
+        A new command has been added which allows users to be notified
+        when another user is no longer "Busy". The =bn "Busy" notifier
+        command comes from another module, Busy Notifier. So if
+        you have version 3.0 of the Globals, running the Busy Notifier
+        module is redundant and only uses more memory.
+
+        Another new command is log-on notices. This command allows users
+        to be notified when someone logs on or off the BBS, tells the
+        number of users on-line, and allows users to give a message to
+        others with the notices. The =log Log-on Notifier comes from
+        another module, Log-on Notifier, so running this module
+        will be a waste of your memory since you are running this
+        version of the Globals. This version also integrates an option
+        to allow holders of the INVKEY, which allows users to toggle
+        invisibility, to have their log-on and log-off messages
+        displayed when toggling invisibility. This can be done to
+        convince your users that the person has actually logged off.
+        When the user toggles himself visible again his minutes on-line
+        are set to 0 as well to complete the illusion.
+        There is also an option to display log-on and log-off messages
+        for users who are toggled invisible by someone else. This allows
+        you to make everyone think that user is off-line. If this option
+        is set, then the user who is toggled has his minutes on-line
+        set to 0 too if you are toggling the user visible.
+        Please note that you may see a message stating that 0 users are
+        on-line, or an amount less than the actual number of users. This
+        is because only visible users are counted in the totals, so you
+        may have several invisible users on-line who are not counted.
+
+        A new toggle has been added which allows users to control
+        whether they receive pages and telegram notices and other
+        interruptions while in the Editor. This command will prevent
+        most such interruptions, but only interruptions caused by
+        this module and not commands such as the /p page command
+        included with the Teleconference. However, if you set the
+        Globals =p command to /p you control this as well, provided
+        that you load Globals before the Teleconference module.
+        There is a free program which will do this; the file name is
+        HVSTOP.ZIP. Optionally users can also simply
+        set their pages off by typing /p off and just use the =p
+        paging command included with the Globals.
+
+        Telegrams have been changed so that only users who can use
+        telegrams are alerted when they receive one. It seemed kind
+        of stupid to alert users who don't have the key that they
+        should type '==' to read their new telegram when they can't
+        read it anyway. Also a problem with users who share words in
+        handles not being able to receive telegrams has been fixed.
+        For example, suppose you have the users Red and Red Knight.
+        With version 2.0 you would be unable to send a telegram to
+        Red Knight because the Globals would find the user Red and
+        send the telegram to Red without checking for users with
+        the same words in their handles. Version 3.0 fixes this
+        problem but you need to remember to be careful when you
+        send a telegram because it may not go to the person you
+        want. Using the same example with Red and Red Knight, if you
+        enter =red knight takes your queen, then Red Knight will
+        receive a telegram saying takes your queen even if you wanted
+        red to receive a telegram saying knight takes your queen. This
+        is a pretty rare situation but one which you should be aware of.
+
+        Another feature we have added is that you can now end the
+        console page beeping without being logged on if you are at
+        the console. Just type Alt-Q and hold the keys down until
+        the beeps stop.
+
+        An option to control whether your users get a "beep" from some
+        of the prompts has been added in DOBEEPS.
+
+        The module also contains some internal changes to increase
+        efficiency and decrease memory consumption. Although the
+        .DLL size and amount of memory needed have increased slightly
+        from version 2.0 we have improved the overall efficiency of
+        the module. The code has been optimized greatly with redundant
+        code being eliminated. We have also changed some of the
+        commands so that they automatically update new data to disk
+        immediately in commands like post days, post credits, etc.
+        In previous versions this was not done for on-line users,
+        so that if the BBS crashed or hung suddenly, the change may
+        not have taken effect.
+
+        We have also moved all the editable text blocks into Level
+        6 CNF (number 6 at the main screen). Previously they were
+        in Level 4.
+
+        For those of you who like statistics, the post credits
+        global now updates the total credits ever and total paid
+        credits fields in the user's account data.
+
+        The last nice little touch is that we have added the user's
+        City and State to the display for credit information on
+        another user. We did NOT add this to the command for a user
+        to check their own credits, because we figure that most users
+        will probably know where they are from (let us hope).
+
+        We think you will find this version of Globals to be
+        better than many competing products, and at a much lower
+        price. We are sure you will agree that Globals 3.0 is
+        the best price/value package available.
+
+        This list of files included with this upgrade is unchanged,
+        except that all of the actual Globals file (those that are
+        named ELW*.*) have been zipped into the file ELWGLOBS.ZIP,
+        and the INSTALL program has been included to install the
+        module for you. DISK1.DID has been included and tells the
+        INSTALL program how to install the module. Because we have
+        now included the INSTALL program, we also have not included
+        the .DAT files with this upgrade. The INSTALL program creates
+        them automatically from the .VIR files when installing. If
+        you are installing an upgrade you will need to over-write
+        your current files. While they have the same names the files
+        have been changed and will need to be replaced with the new
+        files from version 3.0 to ensure reliable operation.
+
+                Globals 3.1 Release Notes
+                -------------------------
+        This version adds a few more major features and a lot of neat
+        little features that really make a big difference in how much
+        you get out of the module.
+
+        Users who log off no longer have an announcement of leaving a
+        global chat channel made after the demo expires.
+
+        We have added "negative" keys to the =uk global. This allows
+        you to remove keys in a user's class keyring from specific users
+        only.
+
+        Log-on notices have been greatly improved. Only non-Sysops, or
+        users who don't have the key you specify, get "fake" log notices
+        when Sysops toggle visibility. Sysops also get accurate lines in
+        use information which includes invisible users.
+
+        A feature has been added to the toggle "Busy" command to allow
+        keyed users to turn another user's "Busy" flag OFF. You can't
+        toggle the flag of a user who is in Opchat or transferring a
+        file, however.
+
+        The "Busy" flag toggle setting has also been made permanent
+        now, which means that the user can leave their "Busy" flag
+        turned on permanently and have it set automatically when
+        they log-on if desired.
+
+        The switch class command can now switch users for a desired
+        number of days if the number is added to the end of the command.
+        This is optional, and if the number is not added, the class switch
+        will be for a default number of days.
+
+        A new command to allow users to transfer days in class has been
+        added.
+
+        A new command to extend the allowable time on-line for users
+        has been added.
+
+        Who's Online has been updated so that while an invisible user
+        is logging on or logging off, he is visible only to those users
+        who can "see" him. By "see" we mean that the user has the key
+        you specified to use invisibility, or if he has the MASTER key or
+        can "see" MASTER key holders. In previous versions users could
+        see invisible users during log-on and log-off, although the
+        invisible users would not be seen while on-line normally.
+
+        The following commands have been modified so that users who
+        can "see" other users can use the commands on them; page,
+        busy notify, boot user, and re-log user. Odds are that if you
+        can "see" a user, you can use commands on him; being able to
+        "see" a user this way is the key.
+
+        Who's Online also allows users to select whether to display
+        their ages to others or not. It also allows them to choose
+        which of the available displays they will see, either on the
+        command line, or as their permanent default.
+
+        The force re-log command is now able to re-log users in the file
+        library, email, and other places where input is totally taken
+        over by a module and not force them to hang up. However, users
+        who are in Opchat or transferring a file cannot be re-logged.
+        In version 3.0 these users could be re-logged.
+
+        The list new users command now displays the city and state of
+        new users in the new user listings.
+
+        A key has been added so that users with this key can page other
+        users whose page setting is OFF or OK at any time. Users with
+        this key cannot be blocked from paging.
+
+        A key has been added so that users with this key cannot have
+        their telegrams cleared or be blocked from sending telegrams,
+        and users who receive telegrams are notified whether their
+        telegram notification setting is ON or OFF. Any user's telegrams
+        may be deleted, however. The difference between clear and delete
+        is that clear removes all telegrams from one user to another,
+        while delete removes every telegram sent by a user period.
+
+        Keys have been added so that users who have them cannot be
+        suspended or deleted using the Globals. The default previously
+        was having the MASTER key, but now you can key who can't be
+        both suspended and deleted separately to suit your tastes.
+
+        A key has been added so that users with this key can transfer
+        credits without restriction. Previously only MASTER key holders
+        could transfer without any restriction.
+
+        A key has been added so that keyholders can post credits
+        without restriction. Previously only MASTER key holders could
+        post credits without any restriction.
+
+        A key has been added that users must have to receive credit
+        transfers. This allows you to prevent users from transfering
+        credits to DEMO or other unpaid users.
+
+        The default macro command strings are now definable by the
+        Sysop in CNF (=m0, =m1, ... =m9), along with default macros,
+        log notices, global chat channel, and most other globals
+        settings for new users. This allows you to set these options
+        for new users to settings that will help your users to learn
+        these commands on your system.
+
+        The Sysop Chat Channel topic, which is for the highest channel
+        in use and which has keyed access, is now definable in CNF.
+
+        The default number of chat channels has been increased to the
+        full 10,000. Since the memory is used anyway, you may as well
+        allow access to them all.
+
+        The /s switch to suspend a user with the Boot User global command
+        has been removed. This is to get users in the habit of using the
+        Suspend command when they really want to suspend someone.
+        Users who are in Opchat cannot be booted off-line with the Boot
+        User command.
+
+        The =cs and =us commands of version 3.0 and earlier have been
+        combined into one command, =cs. Now to get information on another
+        user's settings you type =cs <user-id>. You can now get the
+        settings information on a user who is not on-line, while in
+        earlier versions this command worked only for on-line users.
+
+        The =c and =ui commands of version 3.0 and earlier have also been
+        combined into one command, =c. To get information on another
+        user's information you type =c <user-id>.
+        Some of the information that was previously in the user settings
+        commands, =cs and =us, have been put into the =c user information
+        global command. This was done to both add more information to this
+        command, and to allow room for more information to be added to the
+        user's settings global command. One thing you should be aware of
+        is that under unusual circumstances requesting another user's
+        information may result in no output and you will simply be
+        re-prompted. If this is the case then something strange is going
+        on. The globals could not find the user's class data, and the
+        user is not on-line so that information could not be used either.
+        Rather than crashing the board or printing some error message
+        which you may or may not want the user to see, the globals
+        simply don't give any information. This is not a bug within the
+        globals, but indicates some sort of unusual problem with the
+        system.
+
+        You can now set default globals settings for new users, such
+        as macros, global chat channel, and so on.
+
+        Chat channels now display all other users in the channel that you
+        can "see" when you join a chat channel. This makes it easier for
+        users to tell right away who is in their chat channel.
+
+        A bug with the old =us other user settings command has been
+        fixed. In earlier versions one of the settings given was the
+        user doing the global rather than the user being looked up.
+
+        A bug with the suspend with automatic unsuspend command would
+        boot on-line users but not suspend them in version 3.0 and
+        earlier. This has been fixed.
+
+        A bug that could GP the BBS has been fixed. This bug would
+        occur if a user entered a bogus date that is too long for
+        the list new users command, =ln. Now the worst that will
+        happen if a user enters a long string of garbage for the date
+        to check is a bogus date is displayed.
+
+        A bug with log-on notices has also been fixed. In version 3.0
+        if you cleared your log-on message, the log-off message would
+        also be cleared, and notices would be turned on.
+
+        The module catches users after they enter their passwords and
+        removes any negative keys at this point as well as turning
+        them invisible, busy, etc., if needed. The reason it catches
+        them at this point rather than during the log-on routine is
+        so that SLIP users and other users who come on, but are not
+        caught by the log-on routine are handled as they should be.
+
+        We have continued to optimize the code to make it as fast and
+        as small as possible. The size of the .DLL has actually
+        decreased despite adding all these new features. We have also
+        combined messages in the .MSG file where possible to reduce
+        the number of messages and make editing them easier. Many
+        redundant messages were eliminated altogether.
+
+        The file ELWUSER.VIR, which also becomes ELWUSER.DAT, has
+        been renamed to ELWGUSER.VIR, which will become ELWGUSER.DAT.
+        This was done to assist current users in installing the new
+        version. If you have a previous version you will have to
+        completely uninstall the earlier version in order to upgrade
+        to the new version. If you don't do this, the older version
+        will not get upgraded properly, and you will get GP errors.
+        This way the new user data will be installed and used properly
+        because the previous file will be totally ignored by the
+        module.
+        
+        A complete listing of files in the module is as follows:
+        (Note: files that say "(created by INSTALL)" are not inside
+        the .ZIP file, but are created when the INSTALL program is
+        run.)
+        
+        ELWGLOB.ZIP     Is ZIPPED inside the main file, EZEGLOBS.ZIP.
+                        Contains all the files below for installation
+                        by the INSTALL program.
+        ELWGSUS.VIR     Virgin database file of suspended users who are
+                        set for automatic unsuspend.
+        ELWGSUS.DAT     Data file of suspended users who are set for
+                        automatic unsuspend (created by INSTALL).
+        ELWGLOBS.DOC    Listing of all global commands and their use
+        ELWGLOBS.MDF    Module definition file; details about module
+                        for use by MAJORBBS.EXE.
+        GLOB.TXT        Ordering information for module.
+        ELWGLOBS.MSG    CNF options in text file form.
+        ELWGLOBS.DLL    The module itself as run by BBS.
+        ELWGLOBS.RLN    This file! Information about module.
+        ELWGCHAT.VIR    Virgin database file of global chat channel
+                        topics.
+        ELWGCHAT.DAT    Data file of global chat channel topics (created
+                        by INSTALL).
+        ELWGRAM.VIR     Virgin database file of telegrams.
+        ELWGRAM.DAT     Data file of telegrams (created by INSTALL).
+        FILE_ID.DIZ     Description of module for library keyword listing.
+        ELWGUSER.VIR    Virgin database of each user's global information.
+        ELWGUSER.DAT    Data file of each user's global information
+                        (created by INSTALL).
+        ELWGNOT.VIR     Virgin database of each user's negative keys.
+        ELWGNOT.DAT     Data file of each user's negative keys (created by
+                        INSTALL).
+        INSTALL.EXE     The installation program.
+        DISK1.DID       Information about the files for INSTALL to use.
+
+        Finally, you should note that you do not need to and should
+        not make a menu option for this module. All of the commands
+        it gives are available globally and so it does not need a
+        menu selection. We apologize to anyone who feels insulted
+        by what might be an obvious statement, but it really isn't
+        obvious to everyone.
+
+                Globals Version 3.2 Release Notes
+                ---------------------------------
+        This upgrade is designed mainly for full Worldgroup
+        compatibility. It is aware of C/S mode users and deal
+        properly with users in the Client, so these users can
+        have negative keys and are given proper log-on and log-off
+        notices.
+
+        This upgrade has been given the ability to ignore global commands
+        from users who are in certain modules. This was added to prevent
+        users from causing a GP fault while in modules which are very
+        sensitive to global commands used within them. The new option
+        allows you to block the use of the module's global commands in
+        up to 5 different modules, which you specify in options BLOCK1
+        to BLOCK5.
+
+        Two bugs in the transfer credits and transfer days in class
+        commands have been fixed. In this version users can beat the
+        system by transferring, then quickly logging off. The module
+        will allow the transfer to take place, giving the days or
+        credits to the new user, but not charge the user doing the
+        transfer if the user times it right.
+
+        A change has been made in the telegrams. In version 3.1,
+        users who Exited from reading a telegram without responding
+        or going to the next one would have the current telegram
+        deleted. In this upgrade, if the user Exits from reading
+        telegrams, or exits from a reply, the current telegram is
+        not deleted.
+
+        A new command has been added which allows users to set an
+        "alarm" to go off at a desired time. They can use this to
+        remind them of when they need to leave or to do certain
+        things in games, etc.
+
+        A new command has been added which allows users to be notified
+        when desired people log onto or off of the BBS. The real
+        benefits to this command are that they can be notified even if
+        they leave Log Notices OFF, and if they are "Busy" when the
+        desired person logs, they will be notified as soon as possible.
+
+        An option has been added to allow you to delay Chat Channel
+        topic changes for non MASTER key holders. This prevents them
+        from switching channels constantly and driving others nuts
+        with the change notifications. MASTER key holders can change
+        topics with no delay, and the option can be configured to
+        give no delay to everyone if you wish.
+
+        A new key, PGBSYKEY, has been added which allows holder to
+        page thru a user's "Busy" flag. This will only be allowed if
+        option SNDTHRU has been turned ON (set to YES). Users with
+        the key can also page users who are in The Editor even if
+        their Editor Pester toggle has been set to not allow pages
+        while they are in The Editor.
+
+        Pages from users who cannot page thru "Busy" or the Editor
+        Pester setting are instead turned into telegrams.
+
+        This version notifies "Busy" users who are sent a telegram
+        and who have their notification setting ON that they have
+        a telegram as soon as they are no longer "Busy".
+
+        The Busy Notify command has been changed so that a user who
+        was "Busy" when it originally tried to notify him that the
+        person he requested a notice on is no longer "Busy" will be
+        given the notice as soon as possible. In previous versions if
+        the user who created the notify was "Busy" when the notice was
+        delivered, then he would never receive it.
+
+        Finally, this version now runs for a DEMO period of 14 days
+        when it is first installed on the server. You will have the
+        full functionality of the module during this period; nothing
+        has been "crippled". After the DEMO period is over, the module
+        will become EXPIRED if an access code to keep it running has
+        not been purchased. While EXPIRED, none of the globals will
+        work. When you purchase the access code, the globals will
+        then become COMMERCIAL and not EXPIRE out. You can tell what
+        whether you are running DEMO, EXPIRED or COMMERCIAL by looking
+        in the Audit Trail for the message the globals will place there
+        during initialization. The number of days left in the DEMO
+        period if the globals are DEMO is displayed as well. If the
+        module is not expired users who log-on in terminal mode will
+        see this information as well by default.
+
+        A complete listing of files in the module is as follows:
+        (Note: files that say "(created by INSTALL)" are not inside
+        the .ZIP file, but are created when the INSTALL program is
+        run.)
+        
+        GLOB.ZIP        Is ZIPPED inside the main file, ELWGLOBS.ZIP.
+                        Contains all the files below for installation
+                        by the INSTALL program.
+        ELWGSUS.VIR     Virgin database file of suspended users who are
+                        set for automatic unsuspend.
+        ELWGSUS.DAT     Data file of suspended users who are set for
+                        automatic unsuspend (created by INSTALL).
+        ELWGLOBS.DOC    Listing of all global commands and their use
+        ELWGLOBS.MDF    Module definition file; details about module
+                        for use by MAJORBBS.EXE.
+        ELWGLOBS.MSG    CNF options in text file form.
+        ELWGLOBS.DLL    The module itself as run by BBS.
+        ELWGLOBS.RLN    This file! Information about module.
+        ELWGCHAT.VIR    Virgin database file of global chat channel
+                        topics.
+        ELWGCHAT.DAT    Data file of global chat channel topics (created
+                        by INSTALL).
+        ELWGRAM.VIR     Virgin database file of telegrams.
+        ELWGRAM.DAT     Data file of telegrams (created by INSTALL).
+        ELWGUSER.VIR    Virgin database of each user's global information.
+        ELWGUSER.DAT    Data file of each user's global information
+                        (created by INSTALL).
+        ELWGNOT.VIR     Virgin database of each user's negative keys.
+        ELWGNOT.DAT     Data file of each user's negative keys (created by
+                        INSTALL).
+        INSTALL.EXE     The installation program.
+        DISK1.DID       Information about the files for INSTALL to use.
+        FILE_ID.DIZ     Description of module for library keyword listing.
+        REGISTER.ME     Ordering information for module.
+
+
+                Globals Version 3.3 Release Notes
+                ---------------------------------
+        This version is identical to version 3.2 in every way except
+        for the access code generation method. Because of this, there
+        is no need for users of version 3.2 to run this new version.
+
+                Globals Version 3.3W Release Notes
+                ----------------------------------
+        This upgrade is for Worldgroup 3.0 WIN NT/95 compatibility. It
+        also adds some enhancements.
+
+        In the Who's Online display, if you set the option to display
+        page titles for users in the Menuing System, if the title was
+        blank, nothing would be displayed for the user's location in
+        previous versions. Now "Menuing System" will be displayed if
+        this happens.
+        
+        Also in Who's Online, SLIP/PPP users and the SMTP mail
+        server and other "users" like this are not displayed in the
+        user listing.
+        
+        In previous versions, users were automatically informed when
+        their accounts were suspended, deleted, keys given or taken,
+        if they were booted offline, if they were posted days or credits,
+        if their time online was extended, and if their class was switched,
+        and told who did it. Now you can decide whether you want users to
+        be told who has done it when you use the commands, by ending them
+        with a +. The default, not adding a + at the end of the command,
+        does not inform the user who has changed his account.
+        
+        A bug in the suspend user command (SUSSTG) has been fixed where
+        if the user was online at the time of suspension, it didn't
+        register. Also fixed with this command was the message saying
+        the user was suspended printing twice.
+        
+        A bug in the set screen width command which didn't display
+        the usage of the command properly or the current width
+        has also been fixed.
+        
+        A new key has been added that users must have to be able to
+        see how many credits another user has with the user class
+        and credit information (CRDSTG) command. Users who do not have
+        the new key (SEECKEY) will see a "?" rather than the credits
+	     of the other user.
+	
+	     A few disk intensive commands are now polled, which will
+	     decrease the load on the system when running these commands.
+	     The commands are list new users, list users suspended with
+	     automatic unsuspend, and clear chat channel topics.
+        
+        Only MASTER key holders may toggle the invisibility of MASTER
+        key holders.
+
+                Globals Version 3.4 Release Notes
+                ---------------------------------
+        This upgrade is for Worldgroup 3.2 compatibility. It is also
+        now a free module! Elwynor Technologies has taken over 
+        maintenance of Globals.
+        
+        Version 3.41 added Major BBS 10 compatibility and eliminated
+        the need to register the module.
+        
