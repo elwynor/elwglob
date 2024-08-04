@@ -4,14 +4,15 @@
  * Developed 07/25/94 by 'Easy Ed' Erdman.   Major BBS developer code 'EZE'. *
  *                                                                           *
  * Updates: 12/18/94  - 2.0                                                  *
- *		       6/05/95  - 3.0                                                  *
+ *           6/05/95  - 3.0                                                  *
  *           8/21/95  - 3.1                                                  *
- *		       2/22/96  - 3.2                                                  *
+ *           2/22/96  - 3.2                                                  *
  *           5/25/96  - 3.3                                                  *
- *		        4/6/97  - 3.3W                                                 *
- *		     5/19/2021  - 3.4                                                  *
+ *            4/6/97  - 3.3W                                                 *
+ *         5/19/2021  - 3.4                                                  *
  *          8/1/2024  - 3.41                                                 *
- *									                                                  *
+ *          8/4/2024  - 3.42
+ *                                                                           *
  *       Copyright (C) 1994 by EzSoft. All rights reserved.                  *
  *       Copyright (C) 2004-2024 Elwynor Technologies. All rights reserved.  *
  *                                                                           *
@@ -324,15 +325,28 @@ USHORT getage( USHORT todaysdate, char *birthdate )
 	USHORT thismonth;		/* the current month converted to 1 to 12 */
 	USHORT thisday;			/* the current day converted to 1 to 31 */
 
-	monthstring[0]=birthdate[0];
+#ifdef __BUILDV10MODULE
+	// new format is YYYYMMDD
+	monthstring[0] = birthdate[4];
+	monthstring[1] = birthdate[5];
+	daystring[0] = birthdate[6];
+	daystring[1] = birthdate[7];
+	yearstring[0] = birthdate[2];
+	yearstring[1] = birthdate[3];
+#else
+	// old format was MM/DD/YYYY
+	monthstring[0] = birthdate[0];
 	monthstring[1]=birthdate[1];
+	daystring[0] = birthdate[3];
+	daystring[1] = birthdate[4];
+	yearstring[0] = birthdate[6];
+	yearstring[1] = birthdate[7];
+#endif
+
 	monthstring[2]='\0';
-	daystring[0]=birthdate[3];
-	daystring[1]=birthdate[4];
 	daystring[2]='\0';
-	yearstring[0]=birthdate[6];
-	yearstring[1]=birthdate[7];
 	yearstring[2]='\0';
+
 	bmonth=(USHORT)atoi(monthstring);
 	bday=(USHORT)atoi(daystring);
 	byear=(USHORT)atoi(yearstring);

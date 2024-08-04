@@ -242,6 +242,8 @@
  *                  Worldgroup 3.2 Compatibility                             *
  *     8/1/2024   - 3.41                                                     *
  *                  Major BBS V10 Compatibility                              *
+ *     8/4/2024   - 3.42                                                     *
+ *                  Age display bug fix for V10 YYYYMMDD format              *
  *                                                                           *
  *       Copyright (C) 1994 by EzSoft. All rights reserved.                  *
  *       Copyright (C) 2004-2024 Elwynor Technologies. All rights reserved.  *
@@ -296,7 +298,7 @@ DFAFILE *suspenddata;                                   /* users to unsuspend on
 DFAFILE *notkeydata;                                    /* negative keys users have */
 
 CHAR *GLO_NAME="Globals";                               /* the module name */
-CHAR *GLO_VERSION="3.41";                               /* version number */
+CHAR *GLO_VERSION="3.42";                               /* version number */
 
 INT pitch;                                              /* pitch in Hz. of beep tone */
 INT numbeeps;                                           /* number of beeps in console page */

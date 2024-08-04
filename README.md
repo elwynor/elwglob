@@ -5,7 +5,7 @@
                       / /_/ / / /_/ / /_/ / /_/ / (__  )
                       \____/_/\____/_.___/\__,_/_/____/
                       
-                                version 3.41
+                                version 3.42
                     Copyright (c) 2024 Elwynor Technologies
 </pre>
 
