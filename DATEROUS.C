@@ -11,7 +11,8 @@
  *            4/6/97  - 3.3W                                                 *
  *         5/19/2021  - 3.4                                                  *
  *          8/1/2024  - 3.41                                                 *
- *          8/4/2024  - 3.42
+ *          8/4/2024  - 3.42                                                 *
+ *         3/5/2024   - 3.43                                                 *
  *                                                                           *
  *       Copyright (C) 1994 by EzSoft. All rights reserved.                  *
  *       Copyright (C) 2004-2024 Elwynor Technologies. All rights reserved.  *
@@ -310,49 +311,52 @@ USHORT daysbtwn( USHORT startdate, USHORT enddate )      /* returns the number o
 * YYYYYYYMMMMDDDDD where Ys are year bits, Ms are month bits and Ds are day  *
 * bits in parameter todaysdate, and the user's birthday in the format of a   *
 * string, MM/DD/YY where the letters are as above, and returns the age of    *
-* user.									     *
+* user.	                                                                     *
+* Note: WG3+ sends YYYYMMDD as birthdate, not MM/DD/YY                       *
 *****************************************************************************/
 
-USHORT getage( USHORT todaysdate, char *birthdate )
+USHORT getage( USHORT todaysdate, CHAR *birthdate )
 	{
-	USHORT byear;			/* numeric value of year of birth */
-	USHORT bmonth;			/* numeric value of month of birth */
-	USHORT bday;			/* numeric value of day of birth */
-	CHAR yearstring[BDYSIZ] = { 0 };	/* string of year of birth */
-	CHAR monthstring[BDYSIZ] = { 0 };	/* string of month of birth */
-	CHAR daystring[BDYSIZ] = { 0 };		/* string of day of birth */
-	USHORT usersage;		/* the user's age we return */
-	USHORT thismonth;		/* the current month converted to 1 to 12 */
-	USHORT thisday;			/* the current day converted to 1 to 31 */
+	USHORT byear;			     /* numeric value of year of birth */
+	USHORT bmonth;			     /* numeric value of month of birth */
+	USHORT bday;			     /* numeric value of day of birth */
+	CHAR yearstring[5] = { 0 };	 /* string of year of birth */
+	CHAR monthstring[3] = { 0 }; /* string of month of birth */
+	CHAR daystring[3] = { 0 };   /* string of day of birth */
+	USHORT usersage;             /* the user's age we return */
+	USHORT thisyear;             /* the current year */
+	USHORT thismonth;            /* the current month converted to 1 to 12 */
+	USHORT thisday;              /* the current day converted to 1 to 31 */
 
-#ifdef __BUILDV10MODULE
-	// new format is YYYYMMDD
+    // assuming 32-bit+ format is YYYYMMDD not MM/DD/YY like DOS 
+	yearstring[0] = birthdate[0];
+	yearstring[1] = birthdate[1];
+	yearstring[2] = birthdate[2];
+	yearstring[3] = birthdate[3];
 	monthstring[0] = birthdate[4];
 	monthstring[1] = birthdate[5];
 	daystring[0] = birthdate[6];
 	daystring[1] = birthdate[7];
-	yearstring[0] = birthdate[2];
-	yearstring[1] = birthdate[3];
-#else
-	// old format was MM/DD/YYYY
-	monthstring[0] = birthdate[0];
-	monthstring[1]=birthdate[1];
-	daystring[0] = birthdate[3];
-	daystring[1] = birthdate[4];
-	yearstring[0] = birthdate[6];
-	yearstring[1] = birthdate[7];
-#endif
 
 	monthstring[2]='\0';
 	daystring[2]='\0';
-	yearstring[2]='\0';
+	yearstring[4]='\0';
 
-	bmonth=(USHORT)atoi(monthstring);
-	bday=(USHORT)atoi(daystring);
-	byear=(USHORT)atoi(yearstring);
-	usersage=(((todaysdate&YEARMASK)>>YEARSHIFT)+80)-byear;
-	thismonth=((todaysdate&MONTHMASK)>>MONTHSHIFT);
-	thisday=(todaysdate&DAYMASK);
+	byear = (USHORT)atoi(yearstring);
+	bmonth = (USHORT)atoi(monthstring);
+	bday = (USHORT)atoi(daystring);
+
+	// Extract current date components from todaysdate
+	thisyear = (todaysdate & YEARMASK) >> YEARSHIFT;
+	thismonth = (todaysdate & MONTHMASK) >> MONTHSHIFT;
+	thisday = (todaysdate & DAYMASK);
+
+	// account for today() having a base year of 1980
+	thisyear += 1980;
+
+	// calculate the age
+	usersage = thisyear - byear;
+
 	if ( ( bmonth > thismonth ) || ( ( bmonth == thismonth ) && ( bday > thisday ) ) )
 		{	/* user has not reached this year's birthday, so subtract one from age */
 		if ( usersage )
@@ -361,4 +365,5 @@ USHORT getage( USHORT todaysdate, char *birthdate )
 			}
 		}
 	return(usersage);
+	
 	}

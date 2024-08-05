@@ -12,6 +12,7 @@
  *		     5/19/2021  - 3.4                                                *
  *          8/1/2024  - 3.41                                                 *
  *          8/4/2024  - 3.42                                                 *
+ *          8/5/2024  - 3.43                                                 *
  *									                                         *
  *       Copyright (C) 1994 by EzSoft. All rights reserved.                  *
  *       Copyright (C) 2004-2024 Elwynor Technologies. All rights reserved.  *

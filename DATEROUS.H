@@ -12,6 +12,7 @@
  *		     5/19/2021  - 3.4                                                *
  *          8/1/2024  - 3.41                                                 *
  *          8/4/2024  - 3.42                                                 *
+ *          3/5/2024  - 3.43                                                 *
  *									                                         *
  *       Copyright (C) 1994 by EzSoft. All rights reserved.                  *
  *       Copyright (C) 2004-2024 Elwynor Technologies. All rights reserved.  *
@@ -60,12 +61,11 @@
 #include <stdlib.h>
 #include <limits.h>
 
-#define BDYSIZ 3						/* size of strings for month, day and year strings of birthday */
-#define YEARSHIFT 9						/* >> an USHORT YEARSHIFT times to get desired year */
-#define YEARMASK (INT_MAX&(~(MONTHMASK&DAYMASK)))		/* bits of date as returned by today for year */
-#define MONTHSHIFT 5						/* >> an USHORT MONTHSHIFT times to get desired month */
-#define MONTHMASK 480						/* bits of date as returned by today for month */
-#define DAYMASK 31						/* bits of date as returned by today for day */
+#define YEARMASK 0xFE00          // 7 bits for the year
+#define YEARSHIFT 9              // The number of bits to shift to get the year
+#define MONTHMASK 0x01E0         // 4 bits for the month
+#define MONTHSHIFT 5             // The number of bits to shift to get the month
+#define DAYMASK 0x001F           // 5 bits for the day
 
 extern USHORT getfdate( USHORT daysahead, USHORT datenow );           /* returns date daysahead days in future */
 extern USHORT getpdate( USHORT daysbehind, USHORT datenow );          /* returns a date daysbehind days in the past */

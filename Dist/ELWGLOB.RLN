@@ -878,5 +878,5 @@
         Version 3.41 added Major BBS 10 compatibility and eliminated
         the need to register the module.
         
-        Version 3.42 fixed an age-display bug for V10.
+        Versions 3.42 and 3.43 fixed age-display bugs.
         
