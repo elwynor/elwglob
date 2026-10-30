@@ -1,0 +1,36 @@
+/* Build 26.10.29.3 07:15PM */
+/* ELWGLOB.rc - Windows version resource for the Globals module DLL.        */
+/* Keep it in step with GLO_VERSION (ELWGLOB.C): TOOLS/MKDIST.PY refuses to  */
+/* package a DLL whose ProductVersion differs.  FILEVERSION's last number is */
+/* 0 for a release.                                                          */
+
+#include <winver.h>
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,0,0,0
+ PRODUCTVERSION 4,0,0,0
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0x0L
+ FILEOS VOS_NT_WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName",      "Elwynor Technologies"
+            VALUE "FileDescription",  "Globals - global commands for The Major BBS v10"
+            VALUE "FileVersion",      "4.0.0.0"
+            VALUE "InternalName",     "ELWGLOB"
+            VALUE "LegalCopyright",   "Copyright (c) 2004-2026 Elwynor Technologies. Originally (c) 1994 by EzSoft."
+            VALUE "OriginalFilename", "ELWGLOB.DLL"
+            VALUE "ProductName",      "Globals"
+            VALUE "ProductVersion",   "4.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

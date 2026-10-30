@@ -1,0 +1,14 @@
+# Contributing to this project
+
+Thank you for your interest in contributing to this project!
+
+## How to Contribute
+
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make and test your changes and commit them with clear commit messages.
+4. Submit a pull request with a description of your changes.
+
+Important: You must ensure that your contributions are properly licensed, allowing this project to continue being distributed under the AGPL-3.0 license.
+
+Thank you for your contributions!

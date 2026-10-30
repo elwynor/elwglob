@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  MBBSSDK.props.example
+
+  Copy this file to MBBSSDK.props (which is git-ignored) and set MbbsSdkDir to
+  the location of The Major BBS Module SDK on your machine. The trailing
+  backslash is required.
+
+  The ELWGLOB project imports MBBSSDK.props to locate the SDK headers and
+  import libraries, so the committed project file never contains a local path.
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MbbsSdkDir>C:\Path\To\MBBS 10 SDK\</MbbsSdkDir>
+  </PropertyGroup>
+</Project>
